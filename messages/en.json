@@ -1,5 +1,14 @@
 {
-    "Main": {
-        "prueba": "Hello world"
-    }
+  "Navbar": {
+    "about": "Nosotros",
+    "work": "Trabajos",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "title1": "Software",
+    "title2": "Develope",
+    "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
+    "contactBtn": "Contáctanos"
+  }
 }
