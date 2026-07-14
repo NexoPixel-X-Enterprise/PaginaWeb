@@ -1,5 +1,26 @@
 {
-    "Main": {
-        "prueba": "Hello world"
-    }
+  "Main": {
+    "titulocontactar": "Contact Us",
+    "enviamensajecontacto": "Send us a message",
+    "pontuNombre": "Full Name",
+    "ponerNombre": "Your name",
+    "pontuEmail": "Email",
+    "ponerEmail": "Your email",
+    "pontuAsunto": "Subject",
+    "ponerAsunto": "The subject of your message",
+    "pontuMensaje": "Message",
+    "ponerMensaje": "Your message",
+    "botonEnviar": "Send Message",
+    "botonEnviando": "Sending...",
+    "infoTitulo": "Contact Information",
+    "contactoDirecto": "Direct Contact",
+    "hablanosWhatsapp": "Chat with us on Whatsapp",
+    "botonWhatsapp": "Contact via Whatsapp",
+    "siguenos": "Follow Us",
+    "alertaExito": "Thank you {nombre}! Your message has been sent successfully.",
+    "alertaError": "Error sending message: {error}",
+    "alertaErrorInesperado": "An unexpected error occurred while trying to send the message.",
+    "etiquetatlf" : "Phone",
+    "derechosReservados" : "2026 NexoPixel X All rights reserved."
+}
 }
