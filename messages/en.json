@@ -24,14 +24,16 @@
     "derechosReservados" : "2026 NexoPixel X All rights reserved."
   },
   "Navbar": {
-    "about": "Nosotros",
-    "work": "Trabajos",
-    "services": "Servicios",
-    "contact": "Contacto"
+    "about": "About Us",
+    "work": "Our Work",
+    "services": "Services",
+    "contact": "Contact"
   },
   "Hero": {
     "title1": "Software",
     "title2": "Develope",
+    "description": "We transform your vision into a unique digital experience that connects with your audience and grows your business.",
+    "contactBtn": "Contact Us"
     "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
     "contactBtn": "Contáctanos"
   },
