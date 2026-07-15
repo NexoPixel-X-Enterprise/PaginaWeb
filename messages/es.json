@@ -22,5 +22,17 @@
     "alertaErrorInesperado": "Ocurrió un error inesperado al intentar enviar el mensaje.",
     "etiquetatlf" : "Teléfono",
     "derechosReservados" : "2026 NexoPixel X Todos los derechos reservados."
-}
+  },
+  "Navbar": {
+    "about": "Nosotros",
+    "work": "Trabajos",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "title1": "Software",
+    "title2": "Develope",
+    "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
+    "contactBtn": "Contáctanos"
+  }
 }
