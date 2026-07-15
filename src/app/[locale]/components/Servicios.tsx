@@ -64,7 +64,7 @@ const Tarjetas: Tarjeta[] = [
   }
 ];
 
-export default function Home() {
+export default function Servicios() {
   const t = useTranslations("Servicios");
 
   //Arreglo buffer
