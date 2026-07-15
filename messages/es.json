@@ -1,4 +1,28 @@
 {
+  "Main": {
+    "titulocontactar": "Contáctanos",
+    "enviamensajecontacto": "Envíanos un mensaje",
+    "pontuNombre": "Nombre Completo",
+    "ponerNombre": "Tu nombre",
+    "pontuEmail": "Email",
+    "ponerEmail": "Tu email",
+    "pontuAsunto": "Asunto",
+    "ponerAsunto": "El asunto de tu mensaje",
+    "pontuMensaje": "Mensaje",
+    "ponerMensaje": "Tu mensaje",
+    "botonEnviar": "Enviar Mensaje",
+    "botonEnviando": "Enviando...",
+    "infoTitulo": "Información de Contacto",
+    "contactoDirecto": "Contacto Directo",
+    "hablanosWhatsapp": "Háblanos por Whatsapp",
+    "botonWhatsapp": "Contactar por Whatsapp",
+    "siguenos": "Síguenos",
+    "alertaExito": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
+    "alertaError": "Error al enviar el mensaje: {error}",
+    "alertaErrorInesperado": "Ocurrió un error inesperado al intentar enviar el mensaje.",
+    "etiquetatlf" : "Teléfono",
+    "derechosReservados" : "2026 NexoPixel X Todos los derechos reservados."
+  },
   "Navbar": {
     "about": "Nosotros",
     "work": "Trabajos",
