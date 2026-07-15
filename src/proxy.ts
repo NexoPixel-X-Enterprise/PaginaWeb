@@ -1,10 +1,11 @@
-import createMiddleware from 'next-intl/middleware';
-
-export default createMiddleware({
-  locales: ['es', 'en'],
-  defaultLocale: 'es'
-});
-
+import createProxy from 'next-intl/middleware';
+import {routing} from './i18n/routing';
+ 
+export default createProxy(routing);
+ 
 export const config = {
-  matcher: ['/', '/(es|en)/:path*']
+  // Match all pathnames except for
+  // - … if they start with `/api`, `/trpc`, `/_next` or `/_vercel`
+  // - … the ones containing a dot (e.g. `favicon.ico`)
+  matcher: ['/', '/(es|en)/:path*'],
 };

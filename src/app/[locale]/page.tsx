@@ -1,16 +1,17 @@
 'use client'
 
-import { useTranslations } from "next-intl";
-import { useState } from "react";
+import Inicio from "./components/inicio";
+import Servicios from "./components/servicios";
+import Contactanos from "./components/contactanos";
 
 export default function Home() {
   
-   
-  const t = useTranslations("Main");
 
   return (
     <main>
-      {t("prueba")}
+      <Inicio></Inicio>
+      <Servicios></Servicios>
+      <Contactanos></Contactanos>
     </main>
   );
 }

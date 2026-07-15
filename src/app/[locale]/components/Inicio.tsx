@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 
-export default function LandingPage() {
+export default function Inicio() {
   const tNav = useTranslations('Navbar');
   const tHero = useTranslations('Hero');
 
@@ -12,7 +12,8 @@ export default function LandingPage() {
         <Image 
           src="/fondofinal.jpg" 
           alt="Fondo de teclado y código" 
-          fill
+          fill={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           priority
           className="object-cover opacity-20"
         />
