@@ -34,5 +34,24 @@
     "title2": "Develope",
     "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
     "contactBtn": "Contáctanos"
+  },
+  "Servicios": {
+    "Servicios": "Services",
+    "Titulo1": "Mobile Applications",
+    "Descripcion1": "Android applications.",
+    "TextoT1": "Feature 1",
+    "TextoT2": "Feature 2",
+    "TextoT3": "Feature 3",
+    "Titulo2": "Desktop Applications",
+    "Descripcion2": "Software for Windows and Linux.",
+    "TextoE1": "Feature 1",
+    "TextoE2": "Feature 2",
+    "TextoE3": "Feature 3",
+    "Titulo3": "Web Applications",
+    "Descripcion3": "Modern websites",
+    "TextoW1": "Feature 1",
+    "TextoW2": "Feature 2",
+    "TextoW3": "Feature 3",
+    "Consultar": "Consult"
   }
 }
