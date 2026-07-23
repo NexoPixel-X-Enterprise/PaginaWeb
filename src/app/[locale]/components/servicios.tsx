@@ -1,13 +1,7 @@
 'use client'
 
 import { useTranslations } from "next-intl";
-import { 
-  DevicePhoneMobileIcon, 
-  ComputerDesktopIcon, 
-  WindowIcon, 
-  CheckIcon,
-  ChatBubbleOvalLeftEllipsisIcon 
-} from '@heroicons/react/24/outline';
+import { AndroidIcon, PcIcon, CheckIcon, WppIcon, BashIcon } from "./Icons";
 
 //Struct para las tarjetas
 interface Vineta {
@@ -28,44 +22,44 @@ interface Tarjeta {
 const Tarjetas: Tarjeta[] = [
   {
     id: 'Telefono',
-    Titulo: 'Titulo1',
-    Descripcion: 'Descripcion1',
-    Icono: DevicePhoneMobileIcon,
-    Color: 'border-purple-900 shadow-[0_0_15px_rgba(88,28,135,0.15)]',
+    Titulo: 'mobile-card-title',
+    Descripcion: 'mobile-card-description',
+    Icono: AndroidIcon,
+    Color: 'bg-[#AC19E51A] border-none',
     Caracteristicas: [
-      { id: 'M1', Texto: 'TextoT1' },
-      { id: 'M2', Texto: 'TextoT2' },
-      { id: 'M3', Texto: 'TextoT3' },
+      { id: 'M1', Texto: 'mobile-card-char-1' },
+      { id: 'M2', Texto: 'mobile-card-char-2' },
+      { id: 'M3', Texto: 'mobile-card-char-3' },
     ]
   },
   {
     id: 'Escritorio',
-    Titulo: 'Titulo2',
-    Descripcion: 'Descripcion2',
-    Icono: ComputerDesktopIcon,
-    Color: 'border-blue-900 shadow-[0_0_15px_rgba(30,58,138,0.15)]',
+    Titulo: 'desktop-card-title',
+    Descripcion: 'desktop-card-description',
+    Icono: PcIcon,
+    Color: 'bg-[#2B71FF1A] border-none',
     Caracteristicas: [
-      { id: 'E1', Texto: 'TextoE1' },
-      { id: 'E2', Texto: 'TextoE2' },
-      { id: 'E3', Texto: 'TextoE3' },
+      { id: 'E1', Texto: 'desktop-card-char-1' },
+      { id: 'E2', Texto: 'desktop-card-char-2' },
+      { id: 'E3', Texto: 'desktop-card-char-3' },
     ]
   },
   {
     id: 'Web',
-    Titulo: 'Titulo3',
-    Descripcion: 'Descripcion3',
-    Icono: WindowIcon,
-    Color: 'border-indigo-900 shadow-[0_0_15px_rgba(49,46,129,0.15)]',
+    Titulo: 'web-card-title',
+    Descripcion: 'web-card-description',
+    Icono: BashIcon,
+    Color: 'bg-[#AC19E51A] border-none',
     Caracteristicas: [
-      { id: 'W1', Texto: 'TextoW1' },
-      { id: 'W2', Texto: 'TextoW2' },
-      { id: 'W3', Texto: 'TextoW3' },
+      { id: 'W1', Texto: 'web-card-char-1' },
+      { id: 'W2', Texto: 'web-card-char-2' },
+      { id: 'W3', Texto: 'web-card-char-3' },
     ]
   }
 ];
 
 export default function Servicios() {
-  const t = useTranslations("Servicios");
+  const t = useTranslations("Services");
 
   //Arreglo buffer
   const TarjetasProyecto = [];
@@ -93,35 +87,43 @@ export default function Servicios() {
     TarjetasProyecto.push(
       <div key={Tar.id} className={`flex flex-col bg-[#0B1221] rounded-xl p-8 border ${Tar.Color} transition-transform hover:-translate-y-1`}>
         <div className="flex items-center gap-4 mb-6">
-          <Tar.Icono className="w-8 h-8 text-slate-400 stroke-1" />
-          <h3 className="text-xl font-medium text-slate-200">{t(Tar.Titulo)}</h3>
+          <Tar.Icono className="w-8 h-8 text-[#2b71ff] drop-shadow-[0_0_5px_rgba(0,85,255,0.8)]" />
+          <h3 className="text-xl font-heading text-[#D5D5D5]">{t(Tar.Titulo)}</h3>
         </div>
         
-        <p className="text-sm text-slate-400 mb-8 leading-relaxed">
+        <p className="text-sm text-[#D5D5D5dd] mb-8 text-justify font-body">
           {t(Tar.Descripcion)} 
         </p>
         
-        <ul className="flex-grow space-y-4 mb-10">
-          {VinetasHTML}
+        <ul className="flex-grow space-y-4 mb-10 font-body">
+          {VinetasHTML} 
         </ul>
         
-        <button className="flex items-center justify-center gap-2 w-full py-3 rounded-full border border-indigo-600 bg-transparent text-slate-300 hover:bg-indigo-900/40 transition-colors">
-          <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-5" />
-          <span>{t("Consultar")}</span>
+        <button className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-[50px] cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading">
+          <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out pl-8 group-hover:pl-0">
+            <span className='absolute left-0 transition-all duration-500 ease-in-out group-hover:opacity-0  group-hover:scale-0  group-hover:w-0  group-hover:overflow-hidden'>
+              <WppIcon className='text-[#0055FF] drop-shadow-[0_0_8px_rgba(0,85,255,0.8)]'></WppIcon>
+            </span>
+            <span className="transition-all duration-500 ease-in-out whitespace-nowrap">
+              {t('card-button')}
+            </span>
+          </div>
         </button>
       </div>
     );
   }
 
   return (
-    <main className="min-h-screen bg-[#060B19] py-20 px-4 flex justify-center font-sans">
+    <main className="bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex justify-center font-sans">
       <div className="max-w-6xl w-full">
-        <h2 className="text-2xl font-semibold text-center text-white mb-12 border-b border-blue-950 pb-4">
-          {t("Servicios")}
+        <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-4 font-heading">
+          {t("services-title")}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="absolute left-0 w-full h-[1px] bg-[#2B71FF] drop-shadow-[0_0_3px_rgb(43,113,255)]"></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-28">
           {TarjetasProyecto}
         </div>
+        <div className="absolute left-0 w-full h-[1px] bg-[#2B71FF] drop-shadow-[0_0_3px_rgb(43,113,255)]"></div>
       </div>
     </main>
   );

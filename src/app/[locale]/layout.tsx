@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Space_Grotesk, Manrope } from 'next/font/google';
 import {NextIntlClientProvider} from 'next-intl';
+import Header from "./components/header";
+import Footer from "./components/footer";
 import "../../styles/globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const spaceGrotesk = Space_Grotesk({ // Titulos
+  subsets: ['latin'],
+  variable: '--font-space',
+  display: 'swap',
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const manrope = Manrope({ // Parrafos
+  subsets: ['latin'],
+  variable: '--font-manrope',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -18,18 +22,27 @@ export const metadata: Metadata = {
   description: "Landing Page",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
 children,
+params
 }: Readonly<{
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }>) {
+
+  const { locale } = await params;
+
   return (
     <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      lang={locale}
+      className={`${spaceGrotesk.variable} ${manrope.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+          <Header></Header>
+          {children}
+          <Footer></Footer>
+          </NextIntlClientProvider>
       </body>
     </html>
   );
