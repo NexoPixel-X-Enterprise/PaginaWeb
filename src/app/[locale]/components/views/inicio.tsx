@@ -1,12 +1,12 @@
 import { useTranslations } from 'next-intl';
-import { WppIcon } from './Icons';
+import { WppIcon } from '../ui/Icons';
 import Image from 'next/image';
 
 export default function Inicio() {
   const tHero = useTranslations('Home');
 
   return (
-    <div className="text-[#D5E3FF] relative min-h-screen text-white font-body overflow-hidden flex flex-col pb-64 pt-32 gap-10">
+    <section className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex flex-col pb-32 pt-32 gap-10">
 
       <div className="absolute inset-0 z-0 select-none">
         <Image 
@@ -58,6 +58,6 @@ export default function Inicio() {
         </div>
       </main>
 
-    </div>
+    </section>
   );
 }

@@ -3,7 +3,7 @@
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { sendEmail } from "@/src/lib/resend/resend"; 
-import { WppIcon, MailIcon, PhoneIcon } from "./Icons";
+import { WppIcon, MailIcon, PhoneIcon } from "../ui/Icons";
 
 export default function Contactanos() {
   const t = useTranslations("Contact");
@@ -120,7 +120,7 @@ export default function Contactanos() {
               <button 
                 type="submit" 
                 disabled={saving} 
-                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#0055FF] rounded-[50px] cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
+                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
               >
                 <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out pr-8 group-hover:pr-0">
                   <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
@@ -164,7 +164,7 @@ export default function Contactanos() {
                 href="https://wa.me/584167428059?text=Hola%20NexoPixel%20X,%20me%20gustaría%20obtener%20más%20información."
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#AC19E5] rounded-[50px] cursor-pointer hover:bg-[#AC19E5] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(172,25,229)] font-heading"
+                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#AC19E5] rounded-full cursor-pointer hover:bg-[#AC19E5] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(172,25,229)] font-heading"
               >
                 <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out pr-8 group-hover:pr-0">
                   <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
