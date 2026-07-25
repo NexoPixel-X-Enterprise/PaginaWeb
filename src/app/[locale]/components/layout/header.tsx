@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { WppIcon, BashIcon} from "./Icons";
-import LanguageToggle from "./languageToggle";
+import { WppIcon, BashIcon} from "../ui/Icons";
+import LanguageToggle from "../ui/languageToggle";
 import Image from "next/image";
 
 export default function Header(){

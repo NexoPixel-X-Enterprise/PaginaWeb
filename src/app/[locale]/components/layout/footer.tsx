@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl"
-import { MailIcon, PhoneIcon, InstagramIcon, FacebookIcon, GithubIcon } from "./Icons"
+import { MailIcon, PhoneIcon, InstagramIcon, FacebookIcon, GithubIcon } from "../ui/Icons"
 
 export default function Footer(){
 

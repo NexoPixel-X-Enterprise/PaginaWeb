@@ -13,6 +13,16 @@
     "contact-button": "Contact Us"
   },
 
+  "Works": {
+    "works-title": "Our works",
+    "image-description-1": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-2": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "visit-button": "Visit"
+  },
+
   "Services": {
     "services-title": "Services",
     "mobile-card-title": "Mobile Applications",

@@ -1,7 +1,7 @@
 'use client'
 
 import { useTranslations } from "next-intl";
-import { AndroidIcon, PcIcon, CheckIcon, WppIcon, BashIcon } from "./Icons";
+import { AndroidIcon, PcIcon, CheckIcon, WppIcon, BashIcon } from "../ui/Icons";
 
 //Struct para las tarjetas
 interface Vineta {
@@ -99,7 +99,7 @@ export default function Servicios() {
           {VinetasHTML} 
         </ul>
         
-        <button className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-[50px] cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading">
+        <button className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading">
           <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out pl-8 group-hover:pl-0">
             <span className='absolute left-0 transition-all duration-500 ease-in-out group-hover:opacity-0  group-hover:scale-0  group-hover:w-0  group-hover:overflow-hidden'>
               <WppIcon className='text-[#0055FF] drop-shadow-[0_0_8px_rgba(0,85,255,0.8)]'></WppIcon>
@@ -114,7 +114,7 @@ export default function Servicios() {
   }
 
   return (
-    <main className="bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex justify-center font-sans">
+    <main className="bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex justify-center font-body">
       <div className="max-w-6xl w-full">
         <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-4 font-heading">
           {t("services-title")}

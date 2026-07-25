@@ -1,4 +1,48 @@
 {
+  "Navbar": {
+    "about": "Nosotros",
+    "work": "Trabajos",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+
+  "Home": {
+    "title-1": "Software",
+    "title-2": "Develope",
+    "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
+    "contact-button": "Contáctanos"
+  },
+
+  "Works": {
+    "works-title": "Nuestros trabajos",
+    "image-description-1": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-2": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "visit-button": "Visitar"
+  },
+
+  "Services": {
+    "services-title": "Servicios",
+    "mobile-card-title": "Aplicaciones Móviles",
+    "mobile-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "mobile-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-title": "Aplicaciones de Escritorio",
+    "desktop-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "desktop-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-title": "Aplicaciones Web",
+    "web-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "web-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "card-button": "Consultar"
+  },
+
   "Contact": {
     "contact-title": "Contáctanos",
     "form-title": "Envíanos un mensaje",
@@ -26,39 +70,5 @@
     "contact-info-title": "Contact Information",
     "follow-us-label": "Follow Us",
     "rights-reserved-label" : "2026 NexoPixel X All rights reserved."
-  },
-
-  "Navbar": {
-    "about": "Nosotros",
-    "work": "Trabajos",
-    "services": "Servicios",
-    "contact": "Contacto"
-  },
-
-  "Home": {
-    "title-1": "Software",
-    "title-2": "Develope",
-    "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
-    "contact-button": "Contáctanos"
-  },
-
-  "Services": {
-    "services-title": "Servicios",
-    "mobile-card-title": "Aplicaciones Móviles",
-    "mobile-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "mobile-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "mobile-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "mobile-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
-    "desktop-card-title": "Aplicaciones de Escritorio",
-    "desktop-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "desktop-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "desktop-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "desktop-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
-    "web-card-title": "Aplicaciones Web",
-    "web-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "web-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "web-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "web-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
-    "card-button": "Consultar"
   }
 }
