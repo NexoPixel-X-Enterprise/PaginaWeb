@@ -9,17 +9,27 @@
   "Home": {
     "title-1": "Software",
     "title-2": "Develope",
+<<<<<<< HEAD
     "description": "We develop web, mobile, and desktop solutions designed to scale your brand, optimize your processes, and deliver the best experience to your users.",
     "contact-button": "Contact Us"
   },
 
   "Works": {
     "works-title": "Our works",
+=======
+    "description": "Desarrollamos soluciones web, móviles y de escritorio diseñadas para escalar tu marca, optimizar tus procesos y ofrecer la mejor experiencia a tus usuarios.",
+    "contact-button": "Contáctanos"
+  },
+
+  "Works": {
+    "works-title": "Nuestros trabajos",
+>>>>>>> fff32cfe0ea1f3de13945cdc2b6c75965c89ed6e
     "image-description-1": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-description-2": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+<<<<<<< HEAD
     "visit-button": "Visit"
   },
 
@@ -71,6 +81,52 @@
     "contact-info-title": "Contact Information",
     "follow-us-label": "Follow Us",
     "rights-reserved-label" : "2026 NexoPixel X All rights reserved."
+=======
+    "visit-button": "Visitar"
+  },
+
+  "Services": {
+    "services-title": "Servicios",
+    "mobile-card-title": "Aplicaciones Móviles",
+    "mobile-card-description": "Lleva tu negocio al bolsillo de tus clientes. Diseñamos e implementamos aplicaciones nativas y multiplataforma ágiles, intuitivas y optimizadas para iOS y Android.",
+    "mobile-card-char-1": "Experiencia de usuario (UX/UI) fluida y moderna.",
+    "mobile-card-char-2": "Integración con APIs, pagos y notificaciones push.",
+    "mobile-card-char-3": "Alto rendimiento y funcionamiento offline u online.",
+    "desktop-card-title": "Aplicaciones de Escritorio",
+    "desktop-card-description": "Herramientas robustas y de alto rendimiento adaptadas a la operativa de tu empresa. Potencia la gestión interna, el control de datos y la productividad de tu equipo.",
+    "desktop-card-char-1": "Sistemas a la medida para control operativo y gestión.",
+    "desktop-card-char-2": "Máxima seguridad y procesamiento de datos local/nube.",
+    "desktop-card-char-3": "Mantenimiento, soporte técnico y actualizaciones continuas.",
+    "web-card-title": "Aplicaciones Web",
+    "web-card-description": "Plataformas y sitios web rápidos, escalables y adaptables a cualquier dispositivo. Convertimos visitantes en clientes con arquitecturas modernas y diseño de alto impacto.",
+    "web-card-char-1": "Diseño responsive y optimizado para motores de búsqueda (SEO).",
+    "web-card-char-2": "Panel de administración intuitivo y personalizable.",
+    "web-card-char-3": "Código limpio, seguro y tiempos de carga ultra rápidos.",
+    "card-button": "Consultar"
+  },
+
+  "Contact": {
+    "contact-title": "Contáctanos",
+    "form-title": "Envíanos un mensaje",
+    "name-label": "Nombre Completo",
+    "name-placeholder": "Tu nombre",
+    "email-label": "Email",
+    "email-placeholder": "Tu email",
+    "subject-label": "Asunto",
+    "subject-placeholder": "El asunto de tu mensaje",
+    "message-label": "Mensaje",
+    "message-placeholder": "Tu mensaje",
+    "submit-button": "Enviar Mensaje",
+    "submit-button-loading": "Enviando...",
+    "contact-info-title": "Información de Contacto",
+    "direct-contact-title": "Contacto Directo",
+    "whatsapp-label": "Háblanos por Whatsapp",
+    "whatsapp-button": "Contactar por Whatsapp",
+    "successfully-send-warning": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
+    "error-send-warning": "Error al enviar el mensaje: {error}",
+    "unexpected-error-warning": "Ocurrió un error inesperado al intentar enviar el mensaje.",
+    "phone-label" : "Teléfono"
+>>>>>>> fff32cfe0ea1f3de13945cdc2b6c75965c89ed6e
   },
 
 "Acerca": {
