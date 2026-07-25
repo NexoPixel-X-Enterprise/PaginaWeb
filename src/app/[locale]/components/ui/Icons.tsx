@@ -186,3 +186,20 @@ export function LanguageIcon(props: React.SVGProps<SVGSVGElement>){
         </svg>
     )
 }
+
+export function BarsIcon(props: React.SVGProps<SVGSVGElement>){
+    return(
+        <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path d="M23.75 18.625V20.75H0.25V18.625H23.75ZM23.75 9.4375V11.5625H0.25V9.4375H23.75ZM23.75 0.25V2.375H0.25V0.25H23.75Z" stroke="currentColor" fill="currentColor" strokeWidth="0.5"/>
+        </svg>
+
+    )
+}
+
+export function XMarkIcon(props: React.SVGProps<SVGSVGElement>){
+    return(
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+            <path d="M16 2.91L13.09 0L8 5.09L2.91 0L0 2.91L5.09 8L0 13.09L2.91 16L8 10.91L13.09 16L16 13.09L10.91 8L16 2.91Z" fill="currentColor"/>
+        </svg>
+    )
+}
