@@ -1,17 +1,17 @@
+
+
 'use client'
 
-import Inicio from "./components/inicio";
-import Servicios from "./components/servicios";
-import Contactanos from "./components/contactanos";
+import Acerca from './components/Acerca';
+
+
 
 export default function Home() {
   
 
   return (
     <main>
-      <Inicio></Inicio>
-      <Servicios></Servicios>
-      <Contactanos></Contactanos>
+     <Acerca />
     </main>
   );
 }
