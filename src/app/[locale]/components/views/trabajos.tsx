@@ -19,35 +19,35 @@ const ITEMS: GalleryItem[] = [
     image: '/example-1.jpg',
     title: 'Lorem ipsum dolor sit amet.',
     description: 'image-description-1',
-    link: "",
+    link: "/",
   },
   {
     id: 2,
     image: '/example-2.jpg',
     title: 'Consectetur adipiscing elit.',
     description: 'image-description-2',
-    link: "",
+    link: "/",
   },
   {
     id: 3,
     image: '/example-3.jpg',
     title: 'Integer nec odio praesent.',
     description: 'image-description-3',
-    link: "",
+    link: "/",
   },
   {
     id: 4,
     image: '/example-4.jpg',
     title: 'Libero justo magna porta.',
     description: 'image-description-4',
-    link: "",
+    link: "/",
   },
   {
     id: 5,
     image: '/example-5.jpg',
     title: 'Duis sagittis ipsum praesent.',
     description: 'image-description-5',
-    link: "",
+    link: "/",
   }
 ];
 
@@ -67,16 +67,22 @@ export default function Trabajos(){
         setActiveIndex((prev) => (prev - 1 + totalItems) % totalItems);
     };
 
-    // Centrar miniatura cuando se seleccione
+    const isFirstRender = useRef(true);
+
     useEffect(() => {
-        const activeThumb = thumbsRef.current?.children[activeIndex] as HTMLElement;
-        if (activeThumb) {
+    if (isFirstRender.current) {
+        isFirstRender.current = false;
+        return;
+    }
+
+    const activeThumb = thumbsRef.current?.children[activeIndex] as HTMLElement;
+    if (activeThumb) {
         activeThumb.scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest',
-            inline: 'center',
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'center',
         });
-        }
+    }
     }, [activeIndex]);
 
     const selectedItem = ITEMS[activeIndex];
