@@ -1,57 +1,64 @@
 {
-  "Main": {
-    "titulocontactar": "Contáctanos",
-    "enviamensajecontacto": "Envíanos un mensaje",
-    "pontuNombre": "Nombre Completo",
-    "ponerNombre": "Tu nombre",
-    "pontuEmail": "Email",
-    "ponerEmail": "Tu email",
-    "pontuAsunto": "Asunto",
-    "ponerAsunto": "El asunto de tu mensaje",
-    "pontuMensaje": "Mensaje",
-    "ponerMensaje": "Tu mensaje",
-    "botonEnviar": "Enviar Mensaje",
-    "botonEnviando": "Enviando...",
-    "infoTitulo": "Información de Contacto",
-    "contactoDirecto": "Contacto Directo",
-    "hablanosWhatsapp": "Háblanos por Whatsapp",
-    "botonWhatsapp": "Contactar por Whatsapp",
-    "siguenos": "Síguenos",
-    "alertaExito": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
-    "alertaError": "Error al enviar el mensaje: {error}",
-    "alertaErrorInesperado": "Ocurrió un error inesperado al intentar enviar el mensaje.",
-    "etiquetatlf" : "Teléfono",
-    "derechosReservados" : "2026 NexoPixel X Todos los derechos reservados."
+  "Contact": {
+    "contact-title": "Contáctanos",
+    "form-title": "Envíanos un mensaje",
+    "name-label": "Nombre Completo",
+    "name-placeholder": "Tu nombre",
+    "email-label": "Email",
+    "email-placeholder": "Tu email",
+    "subject-label": "Asunto",
+    "subject-placeholder": "El asunto de tu mensaje",
+    "message-label": "Mensaje",
+    "message-placeholder": "Tu mensaje",
+    "submit-button": "Enviar Mensaje",
+    "submit-button-loading": "Enviando...",
+    "contact-info-title": "Información de Contacto",
+    "direct-contact-title": "Contacto Directo",
+    "whatsapp-label": "Háblanos por Whatsapp",
+    "whatsapp-button": "Contactar por Whatsapp",
+    "successfully-send-warning": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
+    "error-send-warning": "Error al enviar el mensaje: {error}",
+    "unexpected-error-warning": "Ocurrió un error inesperado al intentar enviar el mensaje.",
+    "phone-label" : "Teléfono"
   },
+
+  "Footer": {
+    "contact-info-title": "Contact Information",
+    "follow-us-label": "Follow Us",
+    "rights-reserved-label" : "2026 NexoPixel X All rights reserved."
+  },
+
   "Navbar": {
     "about": "Nosotros",
     "work": "Trabajos",
     "services": "Servicios",
     "contact": "Contacto"
   },
-  "Hero": {
-    "title1": "Software",
-    "title2": "Develope",
+
+  "Home": {
+    "title-1": "Software",
+    "title-2": "Develope",
     "description": "Transformamos tu visión en una experiencia digital única que conecta con tu audiencia y hace crecer tu negocio.",
-    "contactBtn": "Contáctanos"
+    "contact-button": "Contáctanos"
   },
-  "Servicios": {
-    "Servicios": "Servicios",
-    "Titulo1": "Aplicaciones Móviles",
-    "Descripcion1": "Aplicaciones para Android.",
-    "TextoT1": "Caracteristica 1",
-    "TextoT2": "Caracteristica 2",
-    "TextoT3": "Caracteristica 3",
-    "Titulo2": "Aplicaciones de Escritorio",
-    "Descripcion2": "Software para Windows y Linux.",
-    "TextoE1": "Caracteristica 1",
-    "TextoE2": "Caracteristica 2",
-    "TextoE3": "Caracteristica 3",
-    "Titulo3": "Aplicaciones Web",
-    "Descripcion3": "Paginas web modernas",
-    "TextoW1": "Caracteristica 1",
-    "TextoW2": "Caracteristica 2",
-    "TextoW3": "Caracteristica 3",
-    "Consultar": "Consultar"
+
+  "Services": {
+    "services-title": "Servicios",
+    "mobile-card-title": "Aplicaciones Móviles",
+    "mobile-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "mobile-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-title": "Aplicaciones de Escritorio",
+    "desktop-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "desktop-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-title": "Aplicaciones Web",
+    "web-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "web-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "card-button": "Consultar"
   }
 }

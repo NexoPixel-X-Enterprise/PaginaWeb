@@ -1,57 +1,64 @@
 {
-  "Main": {
-    "titulocontactar": "Contact Us",
-    "enviamensajecontacto": "Send us a message",
-    "pontuNombre": "Full Name",
-    "ponerNombre": "Your name",
-    "pontuEmail": "Email",
-    "ponerEmail": "Your email",
-    "pontuAsunto": "Subject",
-    "ponerAsunto": "The subject of your message",
-    "pontuMensaje": "Message",
-    "ponerMensaje": "Your message",
-    "botonEnviar": "Send Message",
-    "botonEnviando": "Sending...",
-    "infoTitulo": "Contact Information",
-    "contactoDirecto": "Direct Contact",
-    "hablanosWhatsapp": "Chat with us on Whatsapp",
-    "botonWhatsapp": "Contact via Whatsapp",
-    "siguenos": "Follow Us",
-    "alertaExito": "Thank you {nombre}! Your message has been sent successfully.",
-    "alertaError": "Error sending message: {error}",
-    "alertaErrorInesperado": "An unexpected error occurred while trying to send the message.",
-    "etiquetatlf" : "Phone",
-    "derechosReservados" : "2026 NexoPixel X All rights reserved."
-  },
   "Navbar": {
     "about": "About Us",
     "work": "Our Work",
     "services": "Services",
     "contact": "Contact"
   },
-  "Hero": {
-    "title1": "Software",
-    "title2": "Develope",
+
+  "Home": {
+    "title-1": "Software",
+    "title-2": "Develope",
     "description": "We transform your vision into a unique digital experience that connects with your audience and grows your business.",
-    "contactBtn": "Contact Us"
+    "contact-button": "Contact Us"
   },
-  "Servicios": {
-    "Servicios": "Services",
-    "Titulo1": "Mobile Applications",
-    "Descripcion1": "Android applications.",
-    "TextoT1": "Feature 1",
-    "TextoT2": "Feature 2",
-    "TextoT3": "Feature 3",
-    "Titulo2": "Desktop Applications",
-    "Descripcion2": "Software for Windows and Linux.",
-    "TextoE1": "Feature 1",
-    "TextoE2": "Feature 2",
-    "TextoE3": "Feature 3",
-    "Titulo3": "Web Applications",
-    "Descripcion3": "Modern websites",
-    "TextoW1": "Feature 1",
-    "TextoW2": "Feature 2",
-    "TextoW3": "Feature 3",
-    "Consultar": "Consult"
+
+  "Services": {
+    "services-title": "Services",
+    "mobile-card-title": "Mobile Applications",
+    "mobile-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "mobile-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-title": "Desktop Applications",
+    "desktop-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "desktop-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-title": "Web Applications",
+    "web-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
+    "web-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "card-button": "Consult"
+  },
+
+  "Contact": {
+    "contact-title": "Contact Us",
+    "form-title": "Send us a message",
+    "name-label": "Full Name",
+    "name-placeholder": "Your name",
+    "email-label": "Email",
+    "email-placeholder": "Your email",
+    "subject-label": "Subject",
+    "subject-placeholder": "The subject of your message",
+    "message-label": "Message",
+    "message-placeholder": "Your message",
+    "submit-button": "Send Message",
+    "submit-button-loading": "Sending...",
+    "contact-info-title": "Contact Information",
+    "direct-contact-title": "Direct Contact",
+    "whatsapp-label": "Chat with us on Whatsapp",
+    "whatsapp-button": "Contact via Whatsapp",
+    "successfully-send-warning": "Thank you {nombre}! Your message has been sent successfully.",
+    "error-send-warning": "Error sending message: {error}",
+    "unexpected-error-warning": "An unexpected error occurred while trying to send the message.",
+    "phone-label" : "Phone"
+  },
+
+  "Footer": {
+    "contact-info-title": "Contact Information",
+    "follow-us-label": "Follow Us",
+    "rights-reserved-label" : "2026 NexoPixel X All rights reserved."
   }
 }
