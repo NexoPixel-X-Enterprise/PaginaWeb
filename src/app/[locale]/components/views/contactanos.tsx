@@ -141,14 +141,14 @@ export default function Contactanos() {
               <div className="flex items-center gap-3 text-[#d5d5d5] mb-4">
                 <MailIcon className="text-[#2B71FF] w-6"></MailIcon>
                 <p className="text-sm">
-                  Email: <a href="mailto:nexopixelx@gmail.com?subject=Consulta%20NexoPixel%20X" className="text-white hover:text-purple-400 transition-colors ml-1">nexopixelx@gmail.com</a>
+                  Email: <a href="mailto:nexopixelx@gmail.com?subject=Consulta%20NexoPixel%20X" className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1">nexopixelx@gmail.com</a>
                 </p>
               </div>
                
               <div className="flex items-center gap-3 text-[#d5d5d5]">
                 <PhoneIcon className="text-[#2B71FF] w-6"></PhoneIcon>
                 <p className="text-sm">
-                  {t('phone-label')}: <a href="tel:+584167428059" className="text-white hover:text-purple-400 transition-colors ml-1">04167428059</a>
+                  {t('phone-label')}: <a href="tel:+584167428059" className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1">0416-7428059</a>
                 </p>
               </div>
             </div>

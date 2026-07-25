@@ -10,32 +10,44 @@ export default function Footer(){
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex justify-around text-sm gap-8 pb-8 max-[800px]:flex-col">
             <div className="space-y-3">
-              <div className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">NexoPixel X</div>
-              <p className="leading-relaxed max-w-xs font-body text-[#d5d5d5aa]">Lorem ipsum dolor sit amet consectetur.</p>
+              <div className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+                NexoPixel X
+              </div>
+              <p className="leading-relaxed max-w-xs font-body text-[#d5d5d5aa]">
+                {t("description")}
+              </p>
+            </div>
+
+            <div className="space-y-4 text-[#d5d5d5]/70">
+              <h5 className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+                {t('contact-info-title')}
+              </h5>
+              <div className="flex items-center gap-2.5">
+                <MailIcon className="w-5 drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></MailIcon>
+                <a href="mailto:nexopixelx@gmail.com?subject=Contacto%20Desde%20Web" className="hover:text-[#AC19E5] transition-colors font-body">
+                  nexopixelx@gmail.com
+                </a>
+              </div>
+              <div className="flex items-center gap-2.5">
+                <PhoneIcon className="w-5 drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></PhoneIcon>
+                <p className="font-body">
+                  0416-7428059
+                </p>
+              </div>
             </div>
 
             <div className="space-y-4">
-              <h5 className="text-[#d5d5d5] font-semibold text-base font-header text-xl">{t('contact-info-title')}</h5>
-              <div className="flex items-center gap-2.5">
-                <MailIcon className="w-5"></MailIcon>
-                <a href="mailto:nexopixelx@gmail.com?subject=Contacto%20Desde%20Web" className="hover:text-purple-400 transition-colors font-body">nexopixelx@gmail.com</a>
-              </div>
-              <div className="flex items-center gap-2.5">
-                <PhoneIcon className="w-5"></PhoneIcon>
-                <p className="font-body">0416-7428059</p>
-              </div>
-            </div>
-
-            <div className="space-y-4">
-              <h5 className="text-[#d5d5d5] font-semibold text-base">{t('follow-us-label')}</h5>
-              <div className="flex gap-5 ">
-                <a href="https://www.instagram.com/nexopixel_25/" target="_blank" rel="noopener noreferrer" className="group">
+              <h5 className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+                {t('follow-us-label')}
+              </h5>
+              <div className="flex gap-5 text-[#d5d5d5]/70">
+                <a href="https://www.instagram.com/nexopixel_25/" target="_blank" rel="noopener noreferrer" className="group hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]">
                   <InstagramIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></InstagramIcon>
                 </a>
-                <a href="#" className="group">
-                  <FacebookIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></FacebookIcon>
+                <a href="#" className="group hover:text-[#0055FF] drop-shadow-[0_0_3px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_3px_rgba(0,85,225,0.8)]">
+                  <FacebookIcon></FacebookIcon>
                 </a>
-                <a href="#" className="group">
+                <a href="#" className="group hover:drop-shadow-[0_0_3px_rgba(0,85,225, 0.8)] hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]">
                   <GithubIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></GithubIcon>
                 </a>
               </div>

@@ -9,7 +9,7 @@
   "Home": {
     "title-1": "Software",
     "title-2": "Develope",
-    "description": "We transform your vision into a unique digital experience that connects with your audience and grows your business.",
+    "description": "We develop web, mobile, and desktop solutions designed to scale your brand, optimize your processes, and deliver the best experience to your users.",
     "contact-button": "Contact Us"
   },
 
@@ -26,20 +26,20 @@
   "Services": {
     "services-title": "Services",
     "mobile-card-title": "Mobile Applications",
-    "mobile-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "mobile-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "mobile-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "mobile-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "mobile-card-description": "Put your business in your customers' pockets. We design and implement agile, intuitive, and optimized native and cross-platform applications for iOS and Android.",
+    "mobile-card-char-1": "Seamless and modern user experience (UX/UI).",
+    "mobile-card-char-2": "Integration with APIs, payments, and push notifications.",
+    "mobile-card-char-3": "Integration with APIs, payments, and push notifications.",
     "desktop-card-title": "Desktop Applications",
-    "desktop-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "desktop-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "desktop-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "desktop-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "desktop-card-description": "Robust, high-performance tools tailored to your company's operations. Boost internal management, data control, and your team's productivity.",
+    "desktop-card-char-1": "Custom systems for operational control and management.",
+    "desktop-card-char-2": "Maximum security and local/cloud data processing.",
+    "desktop-card-char-3": "Maintenance, technical support, and continuous updates.",
     "web-card-title": "Web Applications",
-    "web-card-description": "Lorem ipsum dolor sit amet consectetur. Euismod amet in vestibulum elit sem. Blandit proin malesuada pharetra convallis lobortis felis sit. Molestie ultrices mattis integer est risus nibh enim arcu enim.",
-    "web-card-char-1": "Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.",
-    "web-card-char-2": "Lorem ipsum dolor sit amet consectetur.",
-    "web-card-char-3": "Lorem ipsum dolor sit amet consectetur.",
+    "web-card-description": "Fast, scalable platforms and websites that adapt to any device. We turn visitors into customers using modern architectures and high-impact design.",
+    "web-card-char-1": "Responsive design optimized for search engines (SEO).",
+    "web-card-char-2": "Intuitive and customizable administration panel.",
+    "web-card-char-3": "Clean, secure code and ultra-fast load times.",
     "card-button": "Consult"
   },
 
@@ -67,6 +67,7 @@
   },
 
   "Footer": {
+    "description": "Custom software development, modern design, and ongoing support to grow your project.",
     "contact-info-title": "Contact Information",
     "follow-us-label": "Follow Us",
     "rights-reserved-label" : "2026 NexoPixel X All rights reserved."
