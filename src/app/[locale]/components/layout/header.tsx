@@ -19,14 +19,14 @@ export default function Header(){
     <header className="fixed z-20 top-0 top-0 left-1/2 -translate-x-1/2 pt-5 px-4 w-full max-w-[1400px] mx-auto backdrop-blur-sm">
       <div className="flex items-center justify-between">
                   
-        <div className="flex-row space-y-3 sm:gap-6  sm:flex items-center text-sm text-[#d5d5d5aa] font-light">
+        <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-6 items-start sm:items-center text-sm text-[#d5d5d5aa] font-light">
           <div className="flex items-center gap-2">
-            <WppIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'></WppIcon>
-            <span>0414-1234567</span>
+            <WppIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
+            <a href="tel:+584167428059" className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">0416-7428059</a>
           </div>
           <div className="flex items-center gap-2">
-            <BashIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]'></BashIcon>
-            <span>correo@gmail.com</span>
+            <BashIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
+            <a href="mailto:nexopixelx@gmail.com?subject=Consulta%20NexoPixel%20X" className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">nexopixelx@gmail.com</a>
           </div>
         </div>
         

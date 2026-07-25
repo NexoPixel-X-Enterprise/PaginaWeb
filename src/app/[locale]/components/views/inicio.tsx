@@ -52,7 +52,7 @@ export default function Inicio() {
             alt="Mockups de la plataforma en múltiples dispositivos" 
             fill
             sizes="(max-width: 500px) 100vw, 50vw"
-            className="object-contain object-center lg:object-right"
+            className="object-contain object-center select-none lg:object-right"
             priority
           />
         </div>
