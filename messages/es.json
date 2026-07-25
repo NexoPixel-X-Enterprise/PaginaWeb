@@ -53,5 +53,15 @@
     "TextoW2": "Caracteristica 2",
     "TextoW3": "Caracteristica 3",
     "Consultar": "Consultar"
+  },
+
+"Acerca": {
+    "titulo": "Acerca de Nosotros",
+    "parrafo1": "Somos un grupo de desarrolladores con mas de 6 años de experiencia en el desarrollo de software, enfocados en crear",
+    "resaltado1": "soluciones tecnológicas",
+    "parrafo2": "En NexoPixel X, nos dedicamos a ofrecer soluciones a medida para cada cliente, buscando como principal objetivo ofrecer",
+    "resaltado2": "resultados y calidad",
+    "tituloGarantia": "Te Garantizamos"
   }
 }
+
