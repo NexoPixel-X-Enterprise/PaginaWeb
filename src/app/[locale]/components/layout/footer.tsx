@@ -24,15 +24,25 @@ export default function Footer(){
               </h5>
               <div className="flex items-center gap-2.5">
                 <MailIcon className="w-5 drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></MailIcon>
-                <a href="mailto:nexopixelx@gmail.com?subject=Contacto%20Desde%20Web" className="hover:text-[#AC19E5] transition-colors font-body">
+                <a 
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=nexopixelx@gmail.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:text-[#AC19E5] transition-colors font-body"
+                >
                   nexopixelx@gmail.com
                 </a>
               </div>
               <div className="flex items-center gap-2.5">
                 <PhoneIcon className="w-5 drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></PhoneIcon>
-                <p className="font-body">
+                <a
+                  href="https://wa.me/584167428059" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-[#AC19E5] transition-colors font-body"
+                >
                   0416-7428059
-                </p>
+                </a>
               </div>
             </div>
 
@@ -41,13 +51,26 @@ export default function Footer(){
                 {t('follow-us-label')}
               </h5>
               <div className="flex gap-5 text-[#d5d5d5]/70">
-                <a href="https://www.instagram.com/nexopixel_25/" target="_blank" rel="noopener noreferrer" className="group hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]">
+                <a 
+                  href="https://www.instagram.com/nexopixel_25/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="group hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]"
+                >
                   <InstagramIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></InstagramIcon>
                 </a>
-                <a href="#" className="group hover:text-[#0055FF] drop-shadow-[0_0_3px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_3px_rgba(0,85,225,0.8)]">
+                <a 
+                  href="#" 
+                  className="group hover:text-[#0055FF] drop-shadow-[0_0_3px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_3px_rgba(0,85,225,0.8)]"
+                >
                   <FacebookIcon></FacebookIcon>
                 </a>
-                <a href="#" className="group hover:drop-shadow-[0_0_3px_rgba(0,85,225, 0.8)] hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]">
+                <a 
+                  href="https://github.com/nexopixelx-rgb"
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="group hover:drop-shadow-[0_0_3px_rgba(0,85,225, 0.8)] hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]"
+                >
                   <GithubIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></GithubIcon>
                 </a>
               </div>

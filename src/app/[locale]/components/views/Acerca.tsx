@@ -5,7 +5,7 @@ export default function Acerca() {
   const t = useTranslations("About");
 
   return (
-    <section className='bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex-col gap-8 justify-center font-body'>
+    <section id='acerca' className='bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex-col gap-8 justify-center font-body'>
       
       <div className='py-12 flex flex-col justify-center items-center m-auto max-w-7xl'>
         <h2 className='text-4xl font-semibold text-center text-[#D5D5D5] pb-12 font-heading'>

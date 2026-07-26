@@ -90,7 +90,7 @@ export default function Trabajos(){
     const t = useTranslations("Works");
 
     return (
-        <section className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex-col justify-center pb-32 gap-10 bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)]">
+        <section id="trabajos" className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex-col justify-center pb-32 gap-10 bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)]">
             <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-24 font-heading">
                 {t("works-title")}
             </h2>

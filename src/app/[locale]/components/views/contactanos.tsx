@@ -50,7 +50,7 @@ export default function Contactanos() {
   };
 
   return (
-    <main className="bg-[#070913] bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen text-white pt-16 flex flex-col justify-between">
+    <section id='contacto' className="bg-[#070913] bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen text-white pt-16 flex flex-col justify-between">
       
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 flex-grow mb-16">
         <div className="text-center mb-16">
@@ -141,14 +141,30 @@ export default function Contactanos() {
               <div className="flex items-center gap-3 text-[#d5d5d5] mb-4">
                 <MailIcon className="text-[#2B71FF] w-6"></MailIcon>
                 <p className="text-sm">
-                  Email: <a href="mailto:nexopixelx@gmail.com?subject=Consulta%20NexoPixel%20X" className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1">nexopixelx@gmail.com</a>
+                  Email: 
+                  <a 
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=nexopixelx@gmail.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1"
+                  >
+                    nexopixelx@gmail.com
+                  </a>
                 </p>
               </div>
                
               <div className="flex items-center gap-3 text-[#d5d5d5]">
                 <PhoneIcon className="text-[#2B71FF] w-6"></PhoneIcon>
                 <p className="text-sm">
-                  {t('phone-label')}: <a href="tel:+584167428059" className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1">0416-7428059</a>
+                  {t('phone-label')}: 
+                  <a 
+                    href="https://wa.me/584167428059" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="text-[#d5d5d5] hover:text-[#AC19E5] transition-colors ml-1"
+                  >
+                    0416-7428059
+                  </a>
                 </p>
               </div>
             </div>
@@ -180,6 +196,6 @@ export default function Contactanos() {
 
         </div>
       </div>
-    </main>
+    </section>
   );
 }

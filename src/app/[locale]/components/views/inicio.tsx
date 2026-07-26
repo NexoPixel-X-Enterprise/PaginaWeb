@@ -6,7 +6,7 @@ export default function Inicio() {
   const tHero = useTranslations('Home');
 
   return (
-    <section className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex flex-col pb-32 pt-32 gap-10">
+    <section id='inicio' className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex flex-col pb-32 pt-32 gap-10">
 
       <div className="absolute inset-0 z-0 select-none">
         <Image 
@@ -36,14 +36,19 @@ export default function Inicio() {
             {tHero('description')}
           </p>
         
-            <button className="group relative flex items-center justify-center gap-3 w-47 my-12 px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#0055FF] rounded-md cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading">
+            <a
+              href="https://wa.me/584167428059" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="group relative flex items-center justify-center gap-3 w-47 my-12 px-6 py-2.5 pr-12 hover:pr-6 border-2 border-[#0055FF] rounded-md cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
+            >
               <span className="transition-all duration-500 ease-in-out">
                 {tHero('contact-button')}
               </span>
               <span className='absolute right-4 transition-all duration-500 ease-in-out group-hover:opacity-0  group-hover:scale-0  group-hover:w-0  group-hover:overflow-hidden'>
                 <WppIcon className='text-[#0055FF] drop-shadow-[0_0_8px_rgba(0,85,255,0.8)]'></WppIcon>
               </span>
-            </button>
+            </a>
         </div>
 
         <div className="w-full relative h-[450px] lg:h-[600px] flex items-center justify-center lg:justify-end">

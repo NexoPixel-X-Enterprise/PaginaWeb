@@ -5,6 +5,7 @@ import { WppIcon, BashIcon, BarsIcon, XMarkIcon} from "../ui/Icons";
 import { useState } from "react";
 import LanguageToggle from "../ui/languageToggle";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header(){
 
@@ -22,19 +23,33 @@ export default function Header(){
         <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-6 items-start sm:items-center text-sm text-[#d5d5d5aa] font-light">
           <div className="flex items-center gap-2">
             <WppIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
-            <a href="tel:+584167428059" className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">0416-7428059</a>
+            <a 
+              href="https://wa.me/584167428059" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">
+              0416-7428059
+            </a>
           </div>
           <div className="flex items-center gap-2">
             <BashIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
-            <a href="mailto:nexopixelx@gmail.com?subject=Consulta%20NexoPixel%20X" className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">nexopixelx@gmail.com</a>
+            <a 
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=nexopixelx@gmail.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1"
+            >
+              nexopixelx@gmail.com
+            </a>
           </div>
         </div>
         
         <nav className="hidden [@media(min-width:840px)]:flex gap-8 text-sm font-normal text-gray-300">
-          <a href="#" className="hover:text-white transition-colors">{tNav('about')}</a>
-          <a href="#" className="hover:text-white transition-colors">{tNav('work')}</a>
-          <a href="#" className="hover:text-white transition-colors">{tNav('services')}</a>
-          <a href="#" className="hover:text-white transition-colors">{tNav('contact')}</a>
+          <Link href="#inicio" className="hover:text-white transition-colors">{tNav('home')}</Link>
+          <Link href="#acerca" className="hover:text-white transition-colors">{tNav('about')}</Link>
+          <Link href="#trabajos" className="hover:text-white transition-colors">{tNav('work')}</Link>
+          <Link href="#servicios" className="hover:text-white transition-colors">{tNav('services')}</Link>
+          <Link href="#contacto" className="hover:text-white transition-colors">{tNav('contact')}</Link>
         </nav>
         
         <div className="hidden [@media(min-width:840px)]:flex relative items-center justify-center gap-4">
@@ -92,18 +107,21 @@ export default function Header(){
 
           {/* Enlaces */}
           <nav className="flex flex-col gap-6 text-lg font-medium text-[#d5d5d5]">
-            <a href="#about" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
+            <Link href="#inicio" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
+              {tNav('home')}
+            </Link>
+            <Link href="#acerca" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
               {tNav('about')}
-            </a>
-            <a href="#work" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
+            </Link>
+            <Link href="#trabajos" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
               {tNav('work')}
-            </a>
-            <a href="#services" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
+            </Link>
+            <Link href="#servicios" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
               {tNav('services')}
-            </a>
-            <a href="#contact" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
+            </Link>
+            <Link href="#contacto" onClick={closeMenu} className="hover:text-[#ac19e5] hover:drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-colors">
               {tNav('contact')}
-            </a>
+            </Link>
           </nav>
         </div>
 
