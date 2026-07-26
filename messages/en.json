@@ -7,21 +7,21 @@
     "contact": "Contact"
   },
 
+  "Home": {
+    "title-1": "Software",
+    "title-2": "Develope",
+    "description": "We develop web, mobile, and desktop solutions designed to scale your brand, optimize your processes, and deliver the best experience to your users.",
+    "contact-button": "Contact Us"
+  },
+
   "About": {
-    "about-title": "Acerca de Nosotros",
+    "about-title": "About us",
     "about-description": "We are a team of developers focused on creating custom digital solutions. We transform complex ideas into fast, intuitive, and scalable software, combining clean code architecture with user-centered design. We are passionate about technology and ensure that every project not only meets but exceeds your business expectations.",
     "warranties-title": "We guarantee you",
     "reliability-description": "Structured and secure code from the very first line. We develop stable systems protected against vulnerabilities so your business runs without interruption.",
     "time-description": "Clear planning and realistic schedules. We meet every milestone and agreed-upon delivery date without surprises or unnecessary delays.",
     "pen-description": "We don't leave you on your own after delivery. We support you during the rollout and provide ongoing technical support to ensure everything operates at 100% efficiency.",
     "performance-description": "Lightning-fast loading speeds and smooth performance. We optimize every component to deliver the best user experience on any device."
-  },
-
-  "Home": {
-    "title-1": "Software",
-    "title-2": "Develope",
-    "description": "We develop web, mobile, and desktop solutions designed to scale your brand, optimize your processes, and deliver the best experience to your users.",
-    "contact-button": "Contact Us"
   },
 
   "Works": {
@@ -40,7 +40,7 @@
     "mobile-card-description": "Put your business in your customers' pockets. We design and implement agile, intuitive, and optimized native and cross-platform applications for iOS and Android.",
     "mobile-card-char-1": "Seamless and modern user experience (UX/UI).",
     "mobile-card-char-2": "Integration with APIs, payments, and push notifications.",
-    "mobile-card-char-3": "Integration with APIs, payments, and push notifications.",
+    "mobile-card-char-3": "High performance and offline or online operation.",
     "desktop-card-title": "Desktop Applications",
     "desktop-card-description": "Robust, high-performance tools tailored to your company's operations. Boost internal management, data control, and your team's productivity.",
     "desktop-card-char-1": "Custom systems for operational control and management.",

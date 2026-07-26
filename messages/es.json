@@ -1,17 +1,17 @@
 {
   "Navbar": {
     "home": "Inicio",
-    "about": "About Us",
-    "work": "Our Work",
-    "services": "Services",
-    "contact": "Contact"
+    "about": "Nosotros",
+    "work": "Trabajos",
+    "services": "Servicios",
+    "contact": "Contacto"
   },
 
   "Home": {
     "title-1": "Software",
     "title-2": "Develope",
-    "description": "We develop web, mobile, and desktop solutions designed to scale your brand, optimize your processes, and deliver the best experience to your users.",
-    "contact-button": "Contact Us"
+    "description": "Desarrollamos soluciones web, móviles y de escritorio diseñadas para escalar tu marca, optimizar tus procesos y ofrecer la mejor experiencia a tus usuarios.",
+    "contact-button": "Contáctanos"
   },
 
   "About": {
@@ -40,7 +40,7 @@
     "mobile-card-description": "Lleva tu negocio al bolsillo de tus clientes. Diseñamos e implementamos aplicaciones nativas y multiplataforma ágiles, intuitivas y optimizadas para iOS y Android.",
     "mobile-card-char-1": "Experiencia de usuario (UX/UI) fluida y moderna.",
     "mobile-card-char-2": "Integración con APIs, pagos y notificaciones push.",
-    "mobile-card-char-3": "Alto rendimiento y funcionamiento offline u online.",
+    "mobile-card-char-3": "High performance and offline or online operation.",
     "desktop-card-title": "Aplicaciones de Escritorio",
     "desktop-card-description": "Herramientas robustas y de alto rendimiento adaptadas a la operativa de tu empresa. Potencia la gestión interna, el control de datos y la productividad de tu equipo.",
     "desktop-card-char-1": "Sistemas a la medida para control operativo y gestión.",
