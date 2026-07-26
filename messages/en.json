@@ -6,6 +6,16 @@
     "contact": "Contact"
   },
 
+  "About": {
+    "about-title": "Acerca de Nosotros",
+    "about-description": "We are a team of developers focused on creating custom digital solutions. We transform complex ideas into fast, intuitive, and scalable software, combining clean code architecture with user-centered design. We are passionate about technology and ensure that every project not only meets but exceeds your business expectations.",
+    "warranties-title": "We guarantee you",
+    "reliability-description": "Structured and secure code from the very first line. We develop stable systems protected against vulnerabilities so your business runs without interruption.",
+    "time-description": "Clear planning and realistic schedules. We meet every milestone and agreed-upon delivery date without surprises or unnecessary delays.",
+    "pen-description": "We don't leave you on your own after delivery. We support you during the rollout and provide ongoing technical support to ensure everything operates at 100% efficiency.",
+    "performance-description": "Lightning-fast loading speeds and smooth performance. We optimize every component to deliver the best user experience on any device."
+  },
+
   "Home": {
     "title-1": "Software",
     "title-2": "Develope",

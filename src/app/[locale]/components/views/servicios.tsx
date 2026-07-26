@@ -87,7 +87,7 @@ export default function Servicios() {
     TarjetasProyecto.push(
       <div key={Tar.id} className={`flex flex-col bg-[#0B1221] rounded-xl p-8 border ${Tar.Color} transition-transform hover:-translate-y-1`}>
         <div className="flex items-center gap-4 mb-6">
-          <Tar.Icono className="w-8 h-8 text-[#2b71ff] drop-shadow-[0_0_5px_rgba(0,85,255,0.8)]" />
+          <Tar.Icono className="w-8 h-8 text-[#0055E1] drop-shadow-[0_0_5px_rgba(0,85,255,0.8)]" />
           <h3 className="text-xl font-heading text-[#D5D5D5]">{t(Tar.Titulo)}</h3>
         </div>
         
@@ -119,11 +119,11 @@ export default function Servicios() {
         <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-4 font-heading">
           {t("services-title")}
         </h2>
-        <div className="absolute left-0 w-full h-[1px] bg-[#2B71FF] drop-shadow-[0_0_3px_rgb(43,113,255)]"></div>
+        <div className="absolute left-0 w-full h-[1px] bg-[#0055E1] drop-shadow-[0_0_3px_rgb(0,85,225)]"></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-28">
           {TarjetasProyecto}
         </div>
-        <div className="absolute left-0 w-full h-[1px] bg-[#2B71FF] drop-shadow-[0_0_3px_rgb(43,113,255)]"></div>
+        <div className="absolute left-0 w-full h-[1px] bg-[#0055E1] drop-shadow-[0_0_3px_rgb(0,85,225)]"></div>
       </div>
     </main>
   );
