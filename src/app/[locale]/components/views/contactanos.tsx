@@ -62,7 +62,7 @@ export default function Contactanos() {
           className="text-center mb-16"
         >
           {/* Título Principal de Contacto */}
-          <h1 className="text-4xl font-header tracking-tight text-[#d5d5d5]">{t('contact-title')}</h1>
+          <h1 className="text-4xl font-heading tracking-tight text-[#d5d5d5]">{t('contact-title')}</h1>
         </motion.div>
         {/*Bloque para enviar mensaje*/}
         <div className="grid grid-cols-1 xl:grid-cols-3 gap-8 items-start">
@@ -75,7 +75,7 @@ export default function Contactanos() {
             className="xl:col-span-2 bg-[#ac19e51A] p-8 rounded-2xl shadow-xl"
           >
         
-            <h2 className="text-2xl font-header mb-6">{t('form-title')}</h2>
+            <h2 className="text-2xl font-heading mb-6">{t('form-title')}</h2>
             
             <form className="space-y-4" onSubmit={handleSubmit}
             >
@@ -158,7 +158,7 @@ export default function Contactanos() {
               transition={{ duration: 1, ease: "easeOut" }} 
               className="bg-[#ac19e51A] p-8 rounded-2xl shadow-xl"
             >
-              <h3 className="text-xl font-semibold text-[#d5d5d5] font-header mb-4">{t('contact-info-title')}</h3>
+              <h3 className="text-xl font-semibold text-[#d5d5d5] font-heading mb-4">{t('contact-info-title')}</h3>
               <div className="flex items-center gap-3 text-[#d5d5d5] mb-4">
                 <MailIcon className="text-[#2B71FF] w-6"></MailIcon>
                 <p className="text-sm">
@@ -203,7 +203,7 @@ export default function Contactanos() {
               transition={{ duration: 1, ease: "easeOut" }}
               className="bg-[#2B71FF1A] p-8 rounded-2xl shadow-xl"
             >
-              <h4 className="text-xl font-semibold font-header text-[#d5d5d5] mb-4">{t('direct-contact-title')}</h4>
+              <h4 className="text-xl font-semibold font-heading text-[#d5d5d5] mb-4">{t('direct-contact-title')}</h4>
               <p className="text-[#d5d5d5] font-body mb-8">{t('whatsapp-label')}</p>
               <a
                 href="https://wa.me/584167428059?text=Hola%20NexoPixel%20X,%20me%20gustaría%20obtener%20más%20información."

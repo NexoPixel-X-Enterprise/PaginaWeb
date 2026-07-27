@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
     },
 
-    sitemap: '',
+    sitemap: 'https://nexo-pixel.vercel.app',
   };
 }

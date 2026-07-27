@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   description: "Landing Page",
   openGraph: {
     title: 'Nexo Pixel | Transformamos tu visión en realidad',
-    description: 'Descripción atractiva que saldrá cuando compartas el link en WhatsApp, X, Facebook, etc.',
-    url: '',
+    description: 'Desarrollamos soluciones web, móviles y de escritorio diseñadas para escalar tu marca, optimizar tus procesos y ofrecer la mejor experiencia a tus usuarios.',
+    url: 'https://nexo-pixel.vercel.app',
     siteName: 'Nexo Pixel',
     images: [
       {
-        url: '', 
+        url: 'https://nexo-pixel.vercel.app', 
         width: 1200,
         height: 630,
         alt: 'Portada de Nexo Pixel',

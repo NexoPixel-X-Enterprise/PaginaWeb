@@ -25,11 +25,16 @@
   },
 
   "Works": {
-    "works-title": "Our works",
-    "image-description-1": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
-    "image-description-2": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "works-title": "Recent work",
+    "image-subtitle-1": "SaaS Platform & Media Conversion",
+    "image-description-1": "A full-stack web solution designed for the rapid and intuitive transformation of multimedia files across multiple formats (PNG, JPG, WebP, MP4, MP3...). The platform optimizes cloud-based media uploading and processing, delivering a seamless experience with support for light/dark themes (next-themes) and internationalization (i18n).",
+    "image-subtitle-2": "UI/UX Design & Digital Catalog",
+    "image-description-2": "UI/UX design for an artisanal bakery's digital catalog. The project focuses on highlighting the visual quality of the products through intuitive navigation, responsive layout, and a color palette designed to drive customer conversion from digital channels to direct purchases.",
+    "image-subtitle-3": "",
     "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-4": "",
     "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-5": "",
     "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "visit-button": "Visit"
   },

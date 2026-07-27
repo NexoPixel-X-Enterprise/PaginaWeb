@@ -29,7 +29,7 @@ export default function Inicio() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.5, ease: "easeOut" }}
-            className="text-6xl xl:text-7xl xl:text-[85px] font-black tracking-tight flex flex-col leading-[1.05] font-heading select-none"
+            className="text-6xl xl:text-7xl xl:text-[85px] tracking-tight flex flex-col leading-[1.05] font-heading select-none"
           >
             <span className="text-[#8914B7] drop-shadow-md text-shadow-[0_0_8px_rgba(137,20,183,0.8)]">
               {tHero('title-1')}

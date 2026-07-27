@@ -20,7 +20,7 @@ export default function Header(){
     <header className="fixed z-50 top-0 left-1/2 -translate-x-1/2 pt-5 px-4 w-full max-w-[1400px] mx-auto backdrop-blur-sm">
       <div className="flex items-center justify-between relative z-50">
                   
-        <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-6 items-start sm:items-center text-sm text-[#d5d5d5aa] font-light">
+        <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-6 items-start sm:items-center text-sm text-[#d5d5d5aa] font-light font-body">
           <div className="flex items-center gap-2">
             <WppIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
             <a 
@@ -46,7 +46,7 @@ export default function Header(){
           </div>
         </div>
         
-        <nav className="hidden [@media(min-width:840px)]:flex gap-8 text-sm font-normal text-gray-300">
+        <nav className="hidden [@media(min-width:900)]:flex gap-8 text-sm font-normal font-body text-gray-300">
           <Link href="#inicio" aria-label="inicio" className="hover:text-white transition-colors">{tNav('home')}</Link>
           <Link href="#acerca" aria-label="acerca" className="hover:text-white transition-colors">{tNav('about')}</Link>
           <Link href="#trabajos" aria-label="trabajos" className="hover:text-white transition-colors">{tNav('work')}</Link>
@@ -54,7 +54,7 @@ export default function Header(){
           <Link href="#contacto" aria-label="contacto" className="hover:text-white transition-colors">{tNav('contact')}</Link>
         </nav>
         
-        <div className="hidden [@media(min-width:840px)]:flex relative items-center justify-center gap-4">
+        <div className="hidden [@media(min-width:900px)]:flex relative items-center justify-center gap-4">
           <LanguageToggle />
           <Image 
             src={"/logo-icon.webp"}
@@ -69,7 +69,7 @@ export default function Header(){
         <button
           onClick={toggleMenu}
           aria-label="Open menu"
-          className="relative z-50 [@media(min-width:840px)]:hidden p-2 cursor-pointer text-[#d5d5d5aa] drop-shadow-[0_0_2px_rgb(213,213,213)] hover:text-[#ac19e5] active:scale-95 transition-transform"
+          className="relative z-50 [@media(min-width:900px)]:hidden p-2 cursor-pointer text-[#d5d5d5aa] drop-shadow-[0_0_2px_rgb(213,213,213)] hover:text-[#ac19e5] active:scale-95 transition-transform"
         >
           <BarsIcon className="size-8" />
         </button>
@@ -110,7 +110,7 @@ export default function Header(){
             </button>
           </div>
 
-          <nav className="flex flex-col gap-6 text-lg font-medium text-[#d5d5d5]">
+          <nav className="flex flex-col gap-6 text-lg font-medium font-body text-[#d5d5d5]">
             <Link href="#inicio" aria-label="inicio" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
               {tNav('home')}
             </Link>

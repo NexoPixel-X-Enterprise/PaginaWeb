@@ -10,7 +10,7 @@ export default function Footer(){
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="flex justify-around text-sm gap-8 pb-8 max-[800px]:flex-col">
             <div className="space-y-3">
-              <div className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+              <div className="text-white font-bold text-xl font-heading tracking-wider text-[#d5d5d5]">
                 NexoPixel X
               </div>
               <p className="leading-relaxed max-w-xs font-body text-[#d5d5d5aa]">
@@ -19,7 +19,7 @@ export default function Footer(){
             </div>
 
             <div className="space-y-4 text-[#d5d5d5]/70">
-              <h5 className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+              <h5 className="text-white font-bold text-xl font-heading tracking-wider text-[#d5d5d5]">
                 {t('contact-info-title')}
               </h5>
               <div className="flex items-center gap-2.5">
@@ -49,7 +49,7 @@ export default function Footer(){
             </div>
 
             <div className="space-y-4">
-              <h5 className="text-white font-bold text-xl font-header tracking-wider text-[#d5d5d5]">
+              <h5 className="text-white font-bold text-xl font-heading tracking-wider text-[#d5d5d5]">
                 {t('follow-us-label')}
               </h5>
               <div className="flex gap-5 text-[#d5d5d5]/70">

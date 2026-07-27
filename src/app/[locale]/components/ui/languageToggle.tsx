@@ -53,7 +53,7 @@ export default function LanguageToggle() {
             <button
               key={lang.code}
               onClick={() => changeLanguage(lang.code)}
-              className={`w-full text-left px-4 py-2.5 text-sm font-bold transition-colors duration-150 cursor-pointer text-[#d5d5d5] ${
+              className={`w-full text-left px-4 py-2.5 text-sm font-bold font-body transition-colors duration-150 cursor-pointer text-[#d5d5d5] ${
                 locale === lang.code
                   ? "bg-[#AC19E5]/40 text-[#f8f4e3]" // selected
                   : "hover:bg-[#AC19E5]/20"

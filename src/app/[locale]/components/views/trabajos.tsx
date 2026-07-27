@@ -1,4 +1,4 @@
-'useClient'
+'use client'
 
 import { useTranslations } from "next-intl"
 import { useState, useRef, useEffect } from "react";
@@ -10,46 +10,31 @@ interface GalleryItem {
     id: number,
     image: string,
     title: string,
+    subtitle: string,
     description: string,
     link: string,
+    tags: string[],
 }
 
 const ITEMS: GalleryItem[] = [
   {
     id: 1,
-    image: '/example-1.jpg',
-    title: 'Lorem ipsum dolor sit amet.',
+    image: '/walrus-morph.webp',
+    title: 'WalrusMorph',
+    subtitle: 'image-subtitle-1',
     description: 'image-description-1',
     link: "/",
+    tags: ["Next.js", "Nestjs", "Tailwind CSS", "Typescript", "Cloudinary"]
   },
   {
     id: 2,
-    image: '/example-2.jpg',
-    title: 'Consectetur adipiscing elit.',
+    image: '/mockup-panaderia.webp',
+    title: 'Opera Dely',
+    subtitle: 'image-subtitle-2',
     description: 'image-description-2',
     link: "/",
+    tags: ["Figma", "UX/UI Design", "Next.js", "Tailwind CSS", "Nestjs", "MySQL"]
   },
-  {
-    id: 3,
-    image: '/example-3.jpg',
-    title: 'Integer nec odio praesent.',
-    description: 'image-description-3',
-    link: "/",
-  },
-  {
-    id: 4,
-    image: '/example-4.jpg',
-    title: 'Libero justo magna porta.',
-    description: 'image-description-4',
-    link: "/",
-  },
-  {
-    id: 5,
-    image: '/example-5.jpg',
-    title: 'Duis sagittis ipsum praesent.',
-    description: 'image-description-5',
-    link: "/",
-  }
 ];
 
 export default function Trabajos(){
@@ -142,15 +127,26 @@ export default function Trabajos(){
                     {/* Titulo, Descripcion y boton para visitar web */}
                     <div className="flex flex-col justify-between h-full py-2 text-justify">
                         <div>
-                            <h2 className="text-2xl font-bold font-header mb-4 text-[#d5d5d5]">
+                            <h2 className="text-2xl font-bold font-heading mb-4 text-[#d5d5d5]">
                             {selectedItem.title}
                             </h2>
+                            <h3 className="font-heading text-lg mb-2">
+                                {t(selectedItem.subtitle)}
+                            </h3>
                             <p className="text-[#d5d5d5aa] leading-relaxed text-sm font-body mb-8">
                             {t(selectedItem.description)}
                             </p>
+                            {selectedItem.tags?.map((tag, index) => (
+                                <span
+                                    key={index}
+                                    className="py-1 mr-3 px-2 rounded-lg border-2 border-[#AC19E5] font-body text-[#d5d5d5] text-sm drop-shadow-[0_0_3px_rgba(172,25,229)]"
+                                >
+                                    {tag}
+                                </span>
+                            ))}
                         </div>
                         <div>
-                            <a
+                            {/* <a
                                 href={selectedItem.link}
                                 target="_blank" 
                                 rel="noopener noreferrer"
@@ -160,7 +156,7 @@ export default function Trabajos(){
                                 <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
                                     {t('visit-button')}
                                 </span>
-                            </a>
+                            </a> */}
                             <div className="w-full h-[1px] bg-gradient-to-r mt-8 from-transparent via-[#0055FF] to-transparent opacity-70" />
                         </div>
                     </div>

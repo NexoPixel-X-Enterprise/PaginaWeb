@@ -25,13 +25,18 @@
   },
 
   "Works": {
-    "works-title": "Nuestros trabajos",
-    "image-description-1": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
-    "image-description-2": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "works-title": "Trabajos recientes",
+    "image-subtitle-1": "Plataforma SaaS & Conversión de Medios",
+    "image-description-1": "Solución web fullstack diseñada para la transformación rápida e intuitiva de archivos multimedia en múltiples formatos (PNG, JPG, WebP, MP4, MP3...). La plataforma optimiza la carga y procesamiento de medios en la nube, ofreciendo una experiencia fluida con soporte para temas claro/oscuro (next-themes) e internacionalización (i18n).",
+    "image-subtitle-2": "UI/UX Design & Catálogo Digital",
+    "image-description-2": "Diseño de interfaz y experiencia de usuario (UI/UX) para el catálogo digital de una panadería artesanal. El proyecto se enfoca en resaltar la calidad visual de los productos mediante una navegación intuitiva, maquetación adaptativa (responsive) y una paleta cromática pensada para impulsar la conversión de clientes desde canales digitales hacia compras directas.",
+    "image-subtitle-3": "",
     "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-4": "",
     "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-5": "",
     "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
-    "visit-button": "Visit"
+    "visit-button": "Visitar"
   },
 
   "Services": {
