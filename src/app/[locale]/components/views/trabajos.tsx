@@ -136,14 +136,16 @@ export default function Trabajos(){
                             <p className="text-[#d5d5d5aa] leading-relaxed text-sm font-body mb-8">
                             {t(selectedItem.description)}
                             </p>
-                            {selectedItem.tags?.map((tag, index) => (
-                                <span
-                                    key={index}
-                                    className="py-1 mr-3 px-2 rounded-lg border-2 border-[#AC19E5] font-body text-[#d5d5d5] text-sm drop-shadow-[0_0_3px_rgba(172,25,229)]"
-                                >
-                                    {tag}
-                                </span>
-                            ))}
+                            <div className="flex flex-wrap gap-2.5 my-4">
+                                {selectedItem.tags?.map((tag, index) => (
+                                    <span
+                                        key={index}
+                                        className="py-1 mr-3 px-2 rounded-lg border-2 border-[#AC19E5] font-body text-[#d5d5d5] text-sm drop-shadow-[0_0_3px_rgba(172,25,229)]"
+                                    >
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
                         </div>
                         <div>
                             {/* <a
