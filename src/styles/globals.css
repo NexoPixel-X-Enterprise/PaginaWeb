@@ -19,6 +19,30 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #d5d5d5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #070913;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d5d5d5aa;
+}
+
+/* Compatibilidad para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #d5d5d5 #070913;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

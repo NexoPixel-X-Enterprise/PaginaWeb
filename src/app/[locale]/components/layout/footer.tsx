@@ -28,6 +28,7 @@ export default function Footer(){
                   href="https://mail.google.com/mail/?view=cm&fs=1&to=nexopixelx@gmail.com" 
                   target="_blank" 
                   rel="noopener noreferrer" 
+                  aria-label="footer email"
                   className="hover:text-[#AC19E5] transition-colors font-body"
                 >
                   nexopixelx@gmail.com
@@ -39,6 +40,7 @@ export default function Footer(){
                   href="https://wa.me/584167428059" 
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="footer whatsapp"
                   className="hover:text-[#AC19E5] transition-colors font-body"
                 >
                   0416-7428059
@@ -55,12 +57,14 @@ export default function Footer(){
                   href="https://www.instagram.com/nexopixel_25/" 
                   target="_blank" 
                   rel="noopener noreferrer" 
+                  aria-label="instagram"
                   className="group hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]"
                 >
                   <InstagramIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></InstagramIcon>
                 </a>
                 <a 
-                  href="#" 
+                  href="#"
+                  aria-label="facebook" 
                   className="group hover:text-[#0055FF] drop-shadow-[0_0_3px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_3px_rgba(0,85,225,0.8)]"
                 >
                   <FacebookIcon></FacebookIcon>
@@ -69,6 +73,7 @@ export default function Footer(){
                   href="https://github.com/nexopixelx-rgb"
                   target="_blank" 
                   rel="noopener noreferrer"
+                  aria-label="github"
                   className="group hover:drop-shadow-[0_0_3px_rgba(0,85,225, 0.8)] hover:text-[#0055FF] drop-shadow-[0_0_1px_rgba(213,213,213,0.8)] hover:drop-shadow-[0_0_1px_rgba(0,85,225,0.8)]"
                 >
                   <GithubIcon className="drop-shadow-[0_0_3px_rgba(213,213,213,0.8)]"></GithubIcon>

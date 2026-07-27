@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl"
 import { useState, useRef, useEffect } from "react";
 import { LeftArrowIcon, RightArrowIcon } from "../ui/Icons";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface GalleryItem {
@@ -90,12 +91,24 @@ export default function Trabajos(){
     const t = useTranslations("Works");
 
     return (
-        <section id="trabajos" className="text-[#d5d5d5] relative min-h-screen font-body overflow-hidden flex-col justify-center pb-32 gap-10 bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)]">
-            <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-24 font-heading">
+        <section id="trabajos" className="text-[#d5d5d5] relative py-16 md:py-24 font-body overflow-hidden flex flex-col justify-center bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)]">
+            <motion.h2 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 1, ease: "linear" }} 
+                className="text-4xl font-semibold text-center text-[#D5D5D5] pb-12 font-heading"
+            >
                 {t("works-title")}
-            </h2>
+            </motion.h2>
 
-            <div className="w-full max-w-8xl mx-auto p-12 text-[#d5d5d5] flex flex-col">
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 1, ease: "linear" }} 
+                className="w-full max-w-8xl mx-auto px-12 pb-12 text-[#d5d5d5] flex flex-col"
+            >
                 {/* Imagen seleccionada con descripcion */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Contenedor de la Imagen */}
@@ -141,6 +154,7 @@ export default function Trabajos(){
                                 href={selectedItem.link}
                                 target="_blank" 
                                 rel="noopener noreferrer"
+                                aria-label="visit webpage button"
                                 className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
                             >
                                 <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
@@ -164,6 +178,7 @@ export default function Trabajos(){
                         <button
                         key={item.id}
                         onClick={() => setActiveIndex(index)}
+                        aria-label="selector de imagen"
                         className={`relative snap-center flex-shrink-0 w-32 h-20 rounded-lg overflow-hidden border-2 transition-all duration-200 cursor-pointer ${
                             isActive
                             ? 'border-[#AC19E5] scale-105 opacity-100 ring-2 ring-[#AC19E5]/40'
@@ -189,13 +204,14 @@ export default function Trabajos(){
                     <button
                         key={index}
                         onClick={() => setActiveIndex(index)}
+                        aria-label="botones para seleccionar imagen"
                         className={`h-2 rounded-full transition-all duration-300 ${
                         index === activeIndex ? 'bg-[#AC19E5] w-6 drop-shadow-[0_0_5px_rgba(172,25,229)]' : 'bg-gray-700 w-2 cursor-pointer'
                         }`}
                     />
                     ))}
                 </div>
-            </div>
+            </motion.div>
 
         </section>
     )
