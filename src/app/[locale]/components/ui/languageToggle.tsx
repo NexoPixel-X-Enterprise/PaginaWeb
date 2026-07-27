@@ -39,6 +39,7 @@ export default function LanguageToggle() {
     {/* Botón Principal */}
     <button
       onClick={() => setIsOpen(!isOpen)}
+      aria-label="cambiar idioma"
       className="group text-[#d5d5d5] cursor-pointer transition-all duration-500 pt-2"
     >
       <LanguageIcon className="size-10 text-[#AC19E5] drop-shadow-[0_0_3px_rgba(172,25,229,0.5)] transition-colors duration-200" />

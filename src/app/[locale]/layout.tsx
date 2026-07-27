@@ -20,6 +20,22 @@ const manrope = Manrope({ // Parrafos
 export const metadata: Metadata = {
   title: "NexoPixel X",
   description: "Landing Page",
+  openGraph: {
+    title: 'Nexo Pixel | Transformamos tu visión en realidad',
+    description: 'Descripción atractiva que saldrá cuando compartas el link en WhatsApp, X, Facebook, etc.',
+    url: '',
+    siteName: 'Nexo Pixel',
+    images: [
+      {
+        url: '', 
+        width: 1200,
+        height: 630,
+        alt: 'Portada de Nexo Pixel',
+      },
+    ],
+    locale: 'es_VE',
+    type: 'website',
+  },
 };
 
 export default async function RootLayout({

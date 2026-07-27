@@ -2,6 +2,7 @@
 
 import { useTranslations } from "next-intl";
 import { AndroidIcon, PcIcon, CheckIcon, WppIcon, BashIcon } from "../ui/Icons";
+import { motion } from "framer-motion";
 
 //Struct para las tarjetas
 interface Vineta {
@@ -16,6 +17,7 @@ interface Tarjeta {
   Icono: React.ElementType;
   Color: string;
   Caracteristicas: Vineta[];
+  transition: number;
 }
 
 //Arreglo de tarjetas
@@ -30,7 +32,8 @@ const Tarjetas: Tarjeta[] = [
       { id: 'M1', Texto: 'mobile-card-char-1' },
       { id: 'M2', Texto: 'mobile-card-char-2' },
       { id: 'M3', Texto: 'mobile-card-char-3' },
-    ]
+    ],
+    transition: -60,
   },
   {
     id: 'Escritorio',
@@ -42,7 +45,8 @@ const Tarjetas: Tarjeta[] = [
       { id: 'E1', Texto: 'desktop-card-char-1' },
       { id: 'E2', Texto: 'desktop-card-char-2' },
       { id: 'E3', Texto: 'desktop-card-char-3' },
-    ]
+    ],
+    transition: 60,
   },
   {
     id: 'Web',
@@ -54,7 +58,8 @@ const Tarjetas: Tarjeta[] = [
       { id: 'W1', Texto: 'web-card-char-1' },
       { id: 'W2', Texto: 'web-card-char-2' },
       { id: 'W3', Texto: 'web-card-char-3' },
-    ]
+    ],
+    transition: -60,
   }
 ];
 
@@ -85,7 +90,14 @@ export default function Servicios() {
 
     //Armar tarjeta
     TarjetasProyecto.push(
-      <div key={Tar.id} className={`flex flex-col bg-[#0B1221] rounded-xl p-8 border ${Tar.Color} transition-transform hover:-translate-y-1`}>
+      <motion.div
+        initial={{ opacity: 0, y: Tar.transition }}
+        whileInView={{ opacity: 1, y: 0 }}
+         transition={{ duration: 0.7, ease: "easeOut" }}
+        viewport={{ once: true, margin: "-50px" }} 
+        key={Tar.id} 
+        className={`flex flex-col bg-[#0B1221] rounded-xl p-8 border ${Tar.Color}`}
+      >
         <div className="flex items-center gap-4 mb-6">
           <Tar.Icono className="w-8 h-8 text-[#0055E1] drop-shadow-[0_0_5px_rgba(0,85,255,0.8)]" />
           <h3 className="text-xl font-heading text-[#D5D5D5]">{t(Tar.Titulo)}</h3>
@@ -103,6 +115,7 @@ export default function Servicios() {
           href="https://wa.me/584167428059" 
           target="_blank" 
           rel="noopener noreferrer"
+          aria-label="card whatsapp button"
           className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
         >
           <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out pl-8 group-hover:pl-0">
@@ -114,18 +127,24 @@ export default function Servicios() {
             </span>
           </div>
         </a>
-      </div>
+      </motion.div>
     );
   }
 
   return (
-    <section id="servicios" className="bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] min-h-screen py-20 px-4 flex justify-center font-body">
+    <section id="servicios" className="bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] py-12 pb-20 px-4 flex justify-center font-body">
       <div className="max-w-6xl w-full">
-        <h2 className="text-4xl font-semibold text-center text-[#D5D5D5] pb-4 font-heading">
+        <motion.h2
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 1, ease: "linear" }} 
+          className="text-4xl font-semibold text-center text-[#D5D5D5] pb-12 font-heading"
+        >
           {t("services-title")}
-        </h2>
+        </motion.h2>
         <div className="absolute left-0 w-full h-[1px] bg-[#0055E1] drop-shadow-[0_0_3px_rgb(0,85,225)]"></div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-28">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 my-28">
           {TarjetasProyecto}
         </div>
         <div className="absolute left-0 w-full h-[1px] bg-[#0055E1] drop-shadow-[0_0_3px_rgb(0,85,225)]"></div>
