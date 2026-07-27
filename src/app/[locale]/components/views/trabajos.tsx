@@ -125,7 +125,7 @@ export default function Trabajos(){
                     </div>
 
                     {/* Titulo, Descripcion y boton para visitar web */}
-                    <div className="flex flex-col justify-between h-full py-2 text-justify">
+                    <div className="flex flex-col justify-between h-full py-2 text-left">
                         <div>
                             <h2 className="text-2xl font-bold font-heading mb-4 text-[#d5d5d5]">
                             {selectedItem.title}

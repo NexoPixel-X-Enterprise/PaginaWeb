@@ -103,7 +103,7 @@ export default function Servicios() {
           <h3 className="text-xl font-heading text-[#D5D5D5]">{t(Tar.Titulo)}</h3>
         </div>
         
-        <p className="text-sm text-[#D5D5D5dd] mb-8 text-justify font-body">
+        <p className="text-sm text-[#D5D5D5dd] mb-8 text-left font-body">
           {t(Tar.Descripcion)} 
         </p>
         
