@@ -87,7 +87,7 @@ export default function Contactanos() {
                   value={formData.nombre}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500" 
+                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-[d5d5d5] focus:outline-none focus:border-blue-500" 
                   placeholder={t('name-placeholder')} 
                 />
               </div>
@@ -100,7 +100,7 @@ export default function Contactanos() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500" 
+                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-[d5d5d5] focus:outline-none focus:border-blue-500" 
                   placeholder={t('email-placeholder')} 
                 />
               </div>
@@ -113,7 +113,7 @@ export default function Contactanos() {
                   value={formData.asunto}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500" 
+                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-[d5d5d5] focus:outline-none focus:border-blue-500" 
                   placeholder={t('subject-placeholder')} 
                 />
               </div>
@@ -125,7 +125,7 @@ export default function Contactanos() {
                   value={formData.mensaje}
                   onChange={handleChange}
                   required
-                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-white focus:outline-none focus:border-blue-500 min-h-[120px]" 
+                  className="w-full bg-[#18143c] border border-blue-800/50 rounded-lg p-3 text-[d5d5d5] focus:outline-none focus:border-blue-500 min-h-[120px]" 
                   placeholder={t('message-placeholder')}
                 ></textarea>
               </div>
