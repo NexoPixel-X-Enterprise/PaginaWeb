@@ -30,8 +30,8 @@
     "image-description-1": "A full-stack web solution designed for the rapid and intuitive transformation of multimedia files across multiple formats (PNG, JPG, WebP, MP4, MP3...). The platform optimizes cloud-based media uploading and processing, delivering a seamless experience with support for light/dark themes (next-themes) and internationalization (i18n).",
     "image-subtitle-2": "UI/UX Design & Digital Catalog",
     "image-description-2": "UI/UX design for an artisanal bakery's digital catalog. The project focuses on highlighting the visual quality of the products through intuitive navigation, responsive layout, and a color palette designed to drive customer conversion from digital channels to direct purchases.",
-    "image-subtitle-3": "",
-    "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-3": "Landing Page & Work Portfolio",
+    "image-description-3": "A modern, responsive website developed for a business specializing in off-road vehicle accessories and equipment (bumpers, racks, roll cages, and side steps). The platform features an optimized visual gallery to showcase completed projects, as well as interactive contact and location sections designed to facilitate customer conversion.",
     "image-subtitle-4": "",
     "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-subtitle-5": "",
@@ -56,6 +56,7 @@
     "web-card-char-1": "Responsive design optimized for search engines (SEO).",
     "web-card-char-2": "Intuitive and customizable administration panel.",
     "web-card-char-3": "Clean, secure code and ultra-fast load times.",
+    "token-error-warning": "Please complete the Turnstile verification.",
     "card-button": "Consult"
   },
 
@@ -79,6 +80,7 @@
     "successfully-send-warning": "Thank you {nombre}! Your message has been sent successfully.",
     "error-send-warning": "Error sending message: {error}",
     "unexpected-error-warning": "An unexpected error occurred while trying to send the message.",
+    "warning-button": "Accept",
     "phone-label" : "Phone"
   },
 

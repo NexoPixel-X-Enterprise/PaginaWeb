@@ -12,6 +12,7 @@ interface GalleryItem {
     title: string,
     subtitle: string,
     description: string,
+    isLinkAvailable: boolean,
     link: string,
     tags: string[],
 }
@@ -24,6 +25,7 @@ const ITEMS: GalleryItem[] = [
     subtitle: 'image-subtitle-1',
     description: 'image-description-1',
     link: "/",
+    isLinkAvailable: false,
     tags: ["Next.js", "Nestjs", "Tailwind CSS", "Typescript", "Cloudinary"]
   },
   {
@@ -33,7 +35,18 @@ const ITEMS: GalleryItem[] = [
     subtitle: 'image-subtitle-2',
     description: 'image-description-2',
     link: "/",
+    isLinkAvailable: false,
     tags: ["Figma", "UX/UI Design", "Next.js", "Tailwind CSS", "Nestjs", "MySQL"]
+  },
+  {
+    id: 3,
+    image: '/acc-savannah-mockup.webp',
+    title: 'Accesorios Savannah',
+    subtitle: 'image-subtitle-3',
+    description: 'image-description-3',
+    link: "https://acc-savannah.vercel.app",
+    isLinkAvailable: true,
+    tags: ["Next.js", "Nestjs", "Tailwind CSS", "Typescript", "Cloudfare"]
   },
 ];
 
@@ -148,17 +161,19 @@ export default function Trabajos(){
                             </div>
                         </div>
                         <div>
-                            {/* <a
-                                href={selectedItem.link}
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                aria-label="visit webpage button"
-                                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
-                            >
-                                <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
-                                    {t('visit-button')}
-                                </span>
-                            </a> */}
+                            {selectedItem.isLinkAvailable && (
+                                <a
+                                    href={selectedItem.link}
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    aria-label="visit webpage button"
+                                    className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
+                                >
+                                    <span  className="transition-all duration-500 ease-in-out whitespace-nowrap">
+                                        {t('visit-button')}
+                                    </span>
+                                </a>
+                            )}
                             <div className="w-full h-[1px] bg-gradient-to-r mt-8 from-transparent via-[#0055FF] to-transparent opacity-70" />
                         </div>
                     </div>

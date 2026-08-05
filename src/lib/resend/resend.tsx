@@ -11,12 +11,30 @@ interface SendEmailProps {
   mensaje: string;
 }
 
-export async function sendEmail({ nombre, email, asunto, mensaje }: SendEmailProps) {
+export async function sendEmail({ nombre, email, asunto, mensaje }: SendEmailProps, token: string) {
   try {
     if (!nombre || !email || !asunto || !mensaje) {
       return { success: false, error: 'Todos los campos son obligatorios.' };
     }
 
+    if (!token) {
+      return { success: false, error: 'Token de seguridad faltante.' };
+    }
+
+    const turnstileResponse = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({
+        secret: process.env.TURNSTILE_SECRET_KEY!,
+        response: token,
+      }),
+    });
+
+    const turnstileData = await turnstileResponse.json();
+
+    if (!turnstileData.success) {
+      return { success: false, error: 'La verificación anti-bots falló. Inténtalo de nuevo.' };
+    }
   
     const data = await resend.emails.send({
       from: 'NexoPixel X Contacto <onboarding@resend.dev>', 
@@ -37,8 +55,8 @@ export async function sendEmail({ nombre, email, asunto, mensaje }: SendEmailPro
 
     return { success: true, data };
 
-  } catch (error: any) {
-    console.error("Error en el servidor de Resend:", error);
-    return { success: false, error: error.message || 'Error interno del servidor' };
+  } catch (error: unknown) {        
+    const errorMessage = error instanceof Error ? error.message : 'Error interno del servidor';
+    return { success: false, error: errorMessage };
   }
 }

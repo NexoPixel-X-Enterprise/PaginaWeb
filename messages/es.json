@@ -30,8 +30,8 @@
     "image-description-1": "Solución web fullstack diseñada para la transformación rápida e intuitiva de archivos multimedia en múltiples formatos (PNG, JPG, WebP, MP4, MP3...). La plataforma optimiza la carga y procesamiento de medios en la nube, ofreciendo una experiencia fluida con soporte para temas claro/oscuro (next-themes) e internacionalización (i18n).",
     "image-subtitle-2": "UI/UX Design & Catálogo Digital",
     "image-description-2": "Diseño de interfaz y experiencia de usuario (UI/UX) para el catálogo digital de una panadería artesanal. El proyecto se enfoca en resaltar la calidad visual de los productos mediante una navegación intuitiva, maquetación adaptativa (responsive) y una paleta cromática pensada para impulsar la conversión de clientes desde canales digitales hacia compras directas.",
-    "image-subtitle-3": "",
-    "image-description-3": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
+    "image-subtitle-3": "Landing Page & Catálogo de Trabajos",
+    "image-description-3": "Sitio web moderno y responsivo desarrollado para un negocio especializado en accesorios y equipamiento todoterreno para vehículos (parachoques, racks, jaulas y estribos). La plataforma cuenta con una galería visual optimizada para exhibir los proyectos realizados y secciones interactivas de contacto y ubicación para facilitar la conversión de clientes.",
     "image-subtitle-4": "",
     "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
     "image-subtitle-5": "",
@@ -79,6 +79,8 @@
     "successfully-send-warning": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
     "error-send-warning": "Error al enviar el mensaje: {error}",
     "unexpected-error-warning": "Ocurrió un error inesperado al intentar enviar el mensaje.",
+    "token-error-warning": "Por favor, completa la verificación de Turnstile.",
+    "warning-button": "Aceptar",
     "phone-label" : "Teléfono"
   },
 

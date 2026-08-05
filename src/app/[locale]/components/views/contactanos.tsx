@@ -4,7 +4,8 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { sendEmail } from "@/src/lib/resend/resend"; 
 import { WppIcon, MailIcon, PhoneIcon } from "../ui/Icons";
-import { motion } from "framer-motion";
+import { Turnstile } from '@marsidev/react-turnstile';
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function Contactanos() {
   const t = useTranslations("Contact");
@@ -26,25 +27,38 @@ export default function Contactanos() {
     }));
   }
 
+  const [warningMessage, setWarningMessage] = useState("");
+  const [warningView, setWarningView] = useState(false);
+  const [token, setToken] = useState<string>('');
+
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setSaving(true);
     
     try {
-      const result = await sendEmail(formData);
+
+      if (!token) {
+          setWarningMessage(t('token-error-warning'));
+          setWarningView(true);
+          setSaving(false);
+          return;
+      }
+
+      const result = await sendEmail(formData, token);
       
       if (result.success) {
        
-        alert(t('successfully-send-warning', { nombre: formData.nombre }));
+        setWarningMessage(t('successfully-send-warning', { nombre: formData.nombre }))
+        setWarningView(true)
         setFormData({ nombre: "", email: "", asunto: "", mensaje: "" });
       } else {
-        
-        alert(t('error-send-warning', { error: result.error || "..." }));
+        setWarningMessage(t('error-send-warning', { error: result.error || "..." }))
+        setWarningView(true)
       } 
 
-    } catch (error) {
-      console.error("Error al conectar con la Server Action:", error);
-      alert(t('unexpected-error-warning'));
+    } catch {
+      setWarningMessage(t('unexpected-error-warning'))
+      setWarningView(true)
     } finally {
       setSaving(false);
     }
@@ -52,6 +66,34 @@ export default function Contactanos() {
 
   return (
     <section id='contacto' className="bg-[#070913] bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] py-16 text-white flex flex-col justify-between">
+
+      <AnimatePresence mode="wait">
+                {warningView && (
+                
+                    <motion.div
+                        key={"warning-modal"}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.3, ease: "easeInOut" }}
+                        className="fixed top-0 left-0 w-full h-full p-2 bg-[#070913]/60 backdrop-blur-sm z-50 flex justify-center items-center transition-all duration-900"
+                    >
+                        <div className="text-[#d5d5d5] font-body p-12 relative max-w-full h-auto bg-[#070913] rounded-xl flex flex-col justify-center items-center gap-6">
+                            <h3 className="text-2xl font-medium text-center">{warningMessage}</h3>
+                            <button
+                                onClick={() => setWarningView(false)}  
+                                className="group relative flex items-center justify-center gap-3 w-full px-6 py-2.5 border-2 border-[#0055FF] rounded-full cursor-pointer hover:bg-[#0055FF] transition-all duration-500 font-medium shadow-[0_0_5px_rgba(0,85,255)] font-heading"
+                            >
+                                <div className="relative flex items-center justify-center transition-all duration-500 ease-in-out">
+                                  <span className="transition-all duration-500 ease-in-out whitespace-nowrap">
+                                    {t('warning-button')}
+                                  </span>
+                                </div>
+                            </button>
+                        </div> 
+                    </motion.div>
+                )}
+            </AnimatePresence>
       
       <div className="max-w-6xl w-full mx-auto px-4 sm:px-6 flex-grow mb-16">
         <motion.div
@@ -129,6 +171,13 @@ export default function Contactanos() {
                   placeholder={t('message-placeholder')}
                 ></textarea>
               </div>
+
+              {/* Turnstile */}
+
+              <Turnstile
+                  siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                  onSuccess={(token) => setToken(token)}
+              />
 
               {/* Botón de envío */}
               <button 

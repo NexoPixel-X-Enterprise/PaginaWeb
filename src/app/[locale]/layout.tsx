@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Nexo Pixel',
     images: [
       {
-        url: 'https://nexo-pixel-x.vercel.app', 
+        url: 'https://nexo-pixel-x.vercel.app/logo-nexopixel-color-sin-fondo.webp', 
         width: 1200,
         height: 630,
         alt: 'Portada de Nexo Pixel',
