@@ -64,8 +64,6 @@ export default function Contactanos() {
     }
   };
 
-  console.log("VALOR DE LA KEY EN CLIENTE:", process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY);
-
   return (
     <section id='contacto' className="bg-[#070913] bg-[radial-gradient(circle_at_center,_#001133_0%,_#050A15_40%)] py-16 text-white flex flex-col justify-between">
 
