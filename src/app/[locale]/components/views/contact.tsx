@@ -13,7 +13,7 @@ export default function Contact(){
     const [formData, setFormData] = useState<SendEmailProps>({
         nombre: "",
         email: "",
-        idioma: "",
+        idioma: "Español",
         mensaje: ""
     });
 
@@ -35,25 +35,25 @@ export default function Contact(){
     let isValid = true;
 
     if (!formData.nombre.trim()) {
-        newErrors.nombre = "El nombre es obligatorio.";
+        newErrors.nombre = tContact("FormMessages.empty-name");
         isValid = false;
     }
 
     if (!formData.email.trim()) {
-        newErrors.email = "El correo electrónico es obligatorio.";
+        newErrors.email = tContact("FormMessages.empty-mail");
         isValid = false;
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-        newErrors.email = "Ingresa un correo electrónico válido.";
+        newErrors.email = tContact("FormMessages.wrong-name");
         isValid = false;
     }
 
     if (!formData.mensaje.trim()) {
-        newErrors.mensaje = "El mensaje no puede estar vacío.";
+        newErrors.mensaje = tContact("FormMessages.empty-msg");
         isValid = false;
     }
 
     if (!token) {
-        newErrors.robot = "Comprueba que no eres un robot.";
+        newErrors.robot = tContact("FormMessages.wrong-token");
         isValid = false;
     }
 
@@ -68,15 +68,15 @@ export default function Contact(){
         const result = await sendEmail(formData, token);
         
         if (result.success) {
-            setStatusMessage({ success: true, text: "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto." });
+            setStatusMessage({ success: true, text: tContact("FormMessages.empty-success") });
             setFormData({ nombre: "", email: "", idioma: "Español", mensaje: "" });
             setToken('');
         } else {
-            setStatusMessage({ success: false, text: result.error || "Hubo un error al enviar el mensaje. Inténtalo de nuevo." });
+            setStatusMessage({ success: false, text: result.error || tContact("FormMessages.error") });
         } 
 
-    } catch(e) {
-      setStatusMessage({ success: false, text: "Error de conexión. Inténtalo de nuevo más tarde." });
+    } catch {
+      setStatusMessage({ success: false, text: tContact("FormMessages.server-error") });
     } finally {
         setLoading(false);
     }

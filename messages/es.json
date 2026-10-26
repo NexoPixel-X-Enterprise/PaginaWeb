@@ -150,6 +150,16 @@
       "details-label": "Detalles del Proyecto",
       "details-placeholder": "Describe lo que quieres para tu proyecto...",
       "form-btn": "Enviar Mensaje y Solicitar Asesoría"
+    },
+    "FormMessages": {
+      "empty-name": "El nombre es obligatorio.",
+      "empty-mail": "El correo electrónico es obligatorio.",
+      "wrong-mail": "Ingresa un correo electrónico válido.",
+      "empty-msg": "El mensaje no puede estar vacío.",
+      "wrong-token": "Comprueba que no eres un robot.",
+      "success": "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.",
+      "error": "Hubo un error al enviar el mensaje. Inténtalo de nuevo.",
+      "server-error": "Error de conexión. Inténtalo de nuevo más tarde."
     }
   },
   "Footer": {

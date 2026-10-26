@@ -150,6 +150,16 @@
       "details-label": "Project Details",
       "details-placeholder": "Describe what you want for your project...",
       "form-btn": "Send Message & Book Consultation"
+    },
+    "FormMessages": {
+      "empty-name": "The name is required.",
+      "empty-mail": "the mail is required.",
+      "wrong-mail": "Enter a valid email address.",
+      "empty-msg": "The message cannot be empty.",
+      "wrong-token": "Verify that you are not a robot.",
+      "success": "Message successfully sended! We will be in touch soon.",
+      "error": "There was an error sending the message. Please try again.",
+      "server-error": "Connection error. Please try again later."
     }
   },
   "Footer": {
