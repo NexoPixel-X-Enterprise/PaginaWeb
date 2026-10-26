@@ -134,7 +134,7 @@ export default function Calculator(){
                             </div>
 
                             <div>
-                                <label className="block text-sm font-bold text-white mb-3 font-heading" data-i18n="calc-step-2">2. {tCalculator("Step2.step")}</label>
+                                <label className="block text-sm font-bold text-white mb-3 font-heading">2. {tCalculator("Step2.step")}</label>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                     <button
                                         type="button"
@@ -214,19 +214,22 @@ export default function Calculator(){
                                 </div>
                             </div>
 
-                            <div className="relative">
-                                <select 
-                                    id="calcSupport" 
-                                    value={selectedPlan}
-                                    onChange={(e) => setSelectedPlan(e.target.value)}
-                                    className="w-full bg-copper/30 border border-slate-800 text-slate-200 text-xs rounded-xl px-4 py-3 pr-10 focus:border-gold outline-none cursor-pointer hover:border-gold/50 transition-all appearance-none"
-                                >
-                                    <option value="0" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan1")}</option>
-                                    <option value="50" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan2")}</option>
-                                    <option value="120" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan3")}</option>
-                                </select>
-                                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gold text-xs">
-                                    ▼
+                            <div>
+                                <label className="block text-sm font-bold text-white mb-3 font-heading">3. {tCalculator("Step3.step")}</label>
+                                <div className="relative">
+                                    <select 
+                                        id="calcSupport" 
+                                        value={selectedPlan}
+                                        onChange={(e) => setSelectedPlan(e.target.value)}
+                                        className="w-full bg-copper/30 border border-slate-800 text-slate-200 text-xs rounded-xl px-4 py-3 pr-10 focus:border-gold outline-none cursor-pointer hover:border-gold/50 transition-all appearance-none"
+                                    >
+                                        <option value="0" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan1")}</option>
+                                        <option value="50" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan2")}</option>
+                                        <option value="120" className="bg-[#060407] text-slate-200">{tCalculator("Step3.plan3")}</option>
+                                    </select>
+                                    <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gold text-xs">
+                                        ▼
+                                    </div>
                                 </div>
                             </div>
 
