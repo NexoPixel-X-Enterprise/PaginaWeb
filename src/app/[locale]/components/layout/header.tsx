@@ -1,144 +1,110 @@
 'use client'
 
-import { useTranslations } from "next-intl";
-import { WppIcon, BashIcon, BarsIcon, XMarkIcon} from "../ui/Icons";
+import { useTranslations, useLocale } from "next-intl";
+import Image from "next/image"
 import { useState } from "react";
-import LanguageToggle from "../ui/languageToggle";
-import Image from "next/image";
-import Link from "next/link";
+import { faGlobe, faBars } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+// Language
+import { useRouter, usePathname } from "@/src/i18n/navigation";
 
 export default function Header(){
+  const currentLocale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen((prev) => !prev);
-  const closeMenu = () => setIsOpen(false);
+  const changeLanguage = () => {
+    const nextLocale = currentLocale === "es" ? "en" : "es";
+    router.replace(pathname, { locale: nextLocale });
+  };
 
-  const tNav = useTranslations("Navbar");
+  const tNav = useTranslations("Header");
 
   return(
-    <header className="fixed z-50 top-0 left-1/2 -translate-x-1/2 pt-5 px-4 w-full max-w-[1400px] mx-auto backdrop-blur-sm">
-      <div className="flex items-center justify-between relative z-50">
-                  
-        <div className="flex flex-col gap-y-3 sm:flex-row sm:gap-6 items-start sm:items-center text-sm text-[#d5d5d5aa] font-light font-body">
-          <div className="flex items-center gap-2">
-            <WppIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
-            <a 
-              href="https://wa.me/584167428059" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="phone number"
-              className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1">
-              0416-7428059
+    <header className="fixed top-0 left-0 w-full z-50 border-b border-amber/15 backdrop-blur-lg transition-all duration-300">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <a href="#" className="flex items-center gap-3 group">
+                <Image 
+                  src={'/logo-icon.webp'}
+                  alt="Nexo Pixel X Logo"
+                  width={50}
+                  height={50}
+                  loading="eager"
+                />
+                <div className="flex flex-col">
+                    <span className="font-extrabold text-lg text-white tracking-wider flex items-center gap-1 font-heading">
+                        NexoPixel <span className="text-gold drop-shadow-[0_0_10px_rgba(255,170,68,0.8)]">X</span>
+                    </span>
+                    <span className="text-[9px] text-gold/70 tracking-widest uppercase -mt-1 font-semibold">{tNav("span")}</span>
+                </div>
             </a>
-          </div>
-          <div className="flex items-center gap-2">
-            <BashIcon className='w-8 text-[#D5D5D5] drop-shadow-[0_0_8px_rgba(255,255,255,0.8)]' />
-            <a 
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=nexopixelx@gmail.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="email"
-              className="text-[#d5d5d5] hover:text-[#0055FF] transition-colors ml-1"
-            >
-              nexopixelx@gmail.com
-            </a>
-          </div>
-        </div>
-        
-        <nav className="hidden [@media(min-width:900)]:flex gap-8 text-sm font-normal font-body text-gray-300">
-          <Link href="#inicio" aria-label="inicio" className="hover:text-white transition-colors">{tNav('home')}</Link>
-          <Link href="#acerca" aria-label="acerca" className="hover:text-white transition-colors">{tNav('about')}</Link>
-          <Link href="#trabajos" aria-label="trabajos" className="hover:text-white transition-colors">{tNav('work')}</Link>
-          <Link href="#servicios" aria-label="servicios" className="hover:text-white transition-colors">{tNav('services')}</Link>
-          <Link href="#contacto" aria-label="contacto" className="hover:text-white transition-colors">{tNav('contact')}</Link>
-        </nav>
-        
-        <div className="hidden [@media(min-width:900px)]:flex relative items-center justify-center gap-4">
-          <LanguageToggle />
-          <Image 
-            src={"/logo-icon.webp"}
-            alt='logo nexo pixel'
-            width={56}
-            height={50}
-            priority
-          />
-        </div>
 
-        {/* Botón con z-index relativo superior para garantizar el tap en móvil */}
-        <button
-          onClick={toggleMenu}
-          aria-label="Open menu"
-          className="relative z-50 [@media(min-width:900px)]:hidden p-2 cursor-pointer text-[#d5d5d5aa] drop-shadow-[0_0_2px_rgb(213,213,213)] hover:text-[#ac19e5] active:scale-95 transition-transform"
-        >
-          <BarsIcon className="size-8" />
-        </button>
-                  
-      </div>
+            <nav className="hidden [@media(min-width:940px)]:flex items-center gap-4  lg:gap-6 text-sm font-medium text-slate-300">
+                <a href="#servicios" className="hover:text-gold transition-colors" data-i18n="nav-services">{tNav("navbar.services")}</a>
+                <a href="#ventajas" className="hover:text-gold transition-colors" data-i18n="nav-features">{tNav("navbar.why-npx")}</a>
+                <a href="#cotizador" className="hover:text-gold transition-colors" data-i18n="nav-estimator">{tNav("navbar.simulator")}</a>
+                <a href="#stack" className="hover:text-gold transition-colors" data-i18n="nav-tech">{tNav("navbar.tech")}</a>
+                <a href="#nosotros" className="hover:text-gold transition-colors" data-i18n="nav-about">{tNav("navbar.about-us")}</a>
+                {/* <a href="#galeria" className="hover:text-gold transition-colors" data-i18n="nav-about">{tNav("navbar.works")}</a> */}
+            </nav>
 
-      <div className="relative z-20 w-full max-w-[1400px] mx-auto px-8 md:px-16 mt-5">
-        <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-[#ac19e5] to-transparent opacity-70" />
-      </div>
+            <div className="hidden [@media(min-width:940px)]:flex items-center gap-3">
+                <button
+                    aria-label={tNav("lang-label")} 
+                    onClick={() => changeLanguage()} 
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-copper/40 border border-amber/30 text-xs font-semibold hover:border-gold transition-all text-gold cursor-pointer"
+                >
+                    <FontAwesomeIcon icon={faGlobe} />
+                    <span>{tNav("lang")}</span>
+                </button>
 
-      {/* Overlay arreglado con z-40 (por detrás del botón) */}
-      <div
-        onClick={closeMenu}
-        aria-label="Close menu"
-        className={`fixed inset-0 bg-black/60 z-40 transition-opacity duration-300 [@media(min-width:840px)]:hidden ${
-          isOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
-      />
-
-      {/* Panel lateral con z-50 */}
-      <aside
-        className={`fixed top-0 right-0 h-screen w-72 bg-[#050A15] border-l border-[#AC19E5] p-6 flex flex-col justify-between drop-shadow-[0_0_5px_rgba(172,25,229,0.8)] transition-transform duration-300 ease-in-out z-50 [@media(min-width:840px)]:hidden ${
-          isOpen ? 'translate-x-0' : 'translate-x-[calc(100%+12px)]'
-        }`}
-      >
-        <div className="flex flex-col gap-8">
-          <div className="flex items-center justify-between border-b border-gray-800 pb-4">
-            <div className="flex items-center gap-4">
-              <span className="text-xs text-[#d5d5d5aa]">Idioma / Language:</span>
-              <LanguageToggle />
+                <a href="#cotizador" className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-bold rounded-xl group bg-gradient-to-r from-amber via-gold to-crimson group-hover:from-gold group-hover:to-amber text-black shadow-lg shadow-amber/20 transition-all duration-300 hover:scale-105">
+                    <span className="relative px-4 py-2.5 transition-all ease-in duration-75 bg-primary-background rounded-[10px] text-white group-hover:bg-transparent group-hover:text-black font-heading tracking-wide" data-i18n="nav-cta">
+                        {tNav("quote-btn")}
+                    </span>
+                </a>
             </div>
+
             <button
-              onClick={closeMenu}
-              className="text-[#d5d5d5] p-1 cursor-pointer hover:text-[#AC19E5]"
-              aria-label="Close menu"
+              onClick={() => setIsOpen(!isOpen)}
+              className="[@media(min-width:940px)]:hidden text-slate-300 active:text-gold text-2xl focus:outline-none"
             >
-              <XMarkIcon className="size-5" />
+                <FontAwesomeIcon icon={faBars} />
             </button>
-          </div>
-
-          <nav className="flex flex-col gap-6 text-lg font-medium font-body text-[#d5d5d5]">
-            <Link href="#inicio" aria-label="inicio" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
-              {tNav('home')}
-            </Link>
-            <Link href="#acerca" aria-label="acerca" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
-              {tNav('about')}
-            </Link>
-            <Link href="#trabajos" aria-label="trabajos" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
-              {tNav('work')}
-            </Link>
-            <Link href="#servicios" aria-label="servicios" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
-              {tNav('services')}
-            </Link>
-            <Link href="#contacto" aria-label="contacto" onClick={closeMenu} className="hover:text-[#ac19e5] transition-colors">
-              {tNav('contact')}
-            </Link>
-          </nav>
         </div>
 
-        <div className="pt-6 border-t border-gray-800 flex items-center justify-center">
-          <Image
-            src="/logo-icon.webp"
-            alt="logo nexo pixel"
-            width={56}
-            height={50}
-            priority
-          />
+        <div className={`[@media(min-width:940px)]:hidden bg-bg/95 border-b border-amber/20 px-6 py-6 flex flex-col gap-4 text-base font-medium ${
+            isOpen
+              ? "block"
+              : "hidden"
+          }`}>
+            <a href="#servicios" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-services">{tNav("navbar.services")}</a>
+            <a href="#ventajas" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-features">{tNav("navbar.why-npx")}</a>
+            <a href="#cotizador" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-estimator">{tNav("navbar.simulator")}</a>
+            <a href="#stack" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-tech">{tNav("navbar.tech")}</a>
+            <a href="#nosotros" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-about">{tNav("navbar.about-us")}</a>
+            {/* <a href="#galeria" className="mobile-link hover:text-gold active:text-gold" data-i18n="nav-about">{tNav("navbar.works")}</a> */}
+            <div className="pt-4 border-t border-gold/15 flex items-center justify-between">
+                <button 
+                    id="langToggleMobile" 
+                    aria-label={tNav("lang-label")} 
+                    onClick={() => changeLanguage()} 
+                    className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-copper/50 border border-amber/30 text-xs font-semibold text-gold"
+                >
+                    <FontAwesomeIcon icon={faGlobe} />
+                    <span id="langTextMobile">{tNav("lang")}</span>
+                </button>
+                <a href="#cotizador" className="relative inline-flex items-center justify-center p-0.5 overflow-hidden text-xs font-bold rounded-xl group bg-gradient-to-r from-amber via-gold to-crimson group-hover:from-gold group-hover:to-amber text-black shadow-lg shadow-amber/20 transition-all duration-300 hover:scale-105">
+                    <span className="relative px-4 py-2.5 transition-all ease-in duration-75 bg-primary-background rounded-[10px] text-white group-hover:bg-transparent group-hover:text-black group-active:bg-transparent group-active:text-black font-heading tracking-wide" data-i18n="nav-cta">
+                        {tNav("quote-btn")}
+                    </span>
+                </a>
+            </div>
         </div>
-      </aside>
     </header>
   );
 }

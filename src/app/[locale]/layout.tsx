@@ -1,21 +1,17 @@
+// Metadatos
 import type { Metadata } from "next";
-import { Space_Grotesk, Manrope } from 'next/font/google';
+
+// Next-intl
 import {NextIntlClientProvider} from 'next-intl';
+
+// Layout
 import Header from "./components/layout/header";
 import Footer from "./components/layout/footer";
-import "../../styles/globals.css";
 
-const spaceGrotesk = Space_Grotesk({ // Titulos
-  subsets: ['latin'],
-  variable: '--font-space',
-  display: 'swap',
-});
-
-const manrope = Manrope({ // Parrafos
-  subsets: ['latin'],
-  variable: '--font-manrope',
-  display: 'swap',
-});
+// Estilos
+import "@/src/styles/globals.css";
+import { config } from "@fortawesome/fontawesome-svg-core";
+config.autoAddCss = false;
 
 export const metadata: Metadata = {
   title: "NexoPixel X",
@@ -51,7 +47,7 @@ params
   return (
     <html
       lang={locale}
-      className={`${spaceGrotesk.variable} ${manrope.variable} h-full antialiased scroll-smooth`}
+      className={`h-full antialiased scroll-smooth`}
       data-scroll-behavior="smooth"
     >
       <body className="min-h-full flex flex-col">
