@@ -68,7 +68,7 @@ export default function Contact(){
         const result = await sendEmail(formData, token);
         
         if (result.success) {
-            setStatusMessage({ success: true, text: tContact("FormMessages.empty-success") });
+            setStatusMessage({ success: true, text: tContact("FormMessages.success") });
             setFormData({ nombre: "", email: "", idioma: "Español", mensaje: "" });
             setToken('');
         } else {
