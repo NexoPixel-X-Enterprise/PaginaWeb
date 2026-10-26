@@ -31,52 +31,54 @@ export default function Contact(){
     e.preventDefault();
     setStatusMessage(null);
 
+    const newErrors = { nombre: "", email: "", mensaje: "", robot: "" };
+    let isValid = true;
+
+    if (!formData.nombre.trim()) {
+        newErrors.nombre = "El nombre es obligatorio.";
+        isValid = false;
+    }
+
+    if (!formData.email.trim()) {
+        newErrors.email = "El correo electrónico es obligatorio.";
+        isValid = false;
+    } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
+        newErrors.email = "Ingresa un correo electrónico válido.";
+        isValid = false;
+    }
+
+    if (!formData.mensaje.trim()) {
+        newErrors.mensaje = "El mensaje no puede estar vacío.";
+        isValid = false;
+    }
+
+    if (!token) {
+        newErrors.robot = "Comprueba que no eres un robot.";
+        isValid = false;
+    }
+
+    setErrors(newErrors);
+
+    if (!isValid) return;
+
+    setLoading(true);
+
     try {
-
-        const newErrors = { nombre: "", email: "", mensaje: "", robot: "" };
-        let isValid = true;
-
-        if (!formData.nombre.trim()) {
-            newErrors.nombre = "El nombre es obligatorio.";
-            isValid = false;
-        }
-
-        if (!formData.email.trim()) {
-            newErrors.email = "El correo electrónico es obligatorio.";
-            isValid = false;
-        } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-            newErrors.email = "Ingresa un correo electrónico válido.";
-            isValid = false;
-        }
-
-        if (!formData.mensaje.trim()) {
-            newErrors.mensaje = "El mensaje no puede estar vacío.";
-            isValid = false;
-        }
-
-        if (!token) {
-            newErrors.robot = "Comprueba que no eres un robot.";
-            return;
-        }
-
-        setErrors(newErrors);
-
-        if (!isValid) return;
-
-        setLoading(true);
 
         const result = await sendEmail(formData, token);
         
         if (result.success) {
-            setLoading(false);
             setStatusMessage({ success: true, text: "¡Mensaje enviado con éxito! Nos pondremos en contacto pronto." });
-            setFormData({ nombre: "", email: "", idioma: "", mensaje: "" });
+            setFormData({ nombre: "", email: "", idioma: "Español", mensaje: "" });
+            setToken('');
         } else {
             setStatusMessage({ success: false, text: result.error || "Hubo un error al enviar el mensaje. Inténtalo de nuevo." });
         } 
 
-    } catch {
-      return;
+    } catch(e) {
+      setStatusMessage({ success: false, text: "Error de conexión. Inténtalo de nuevo más tarde." });
+    } finally {
+        setLoading(false);
     }
   };
 
@@ -99,7 +101,7 @@ export default function Contact(){
                                 value={formData.nombre}
                                 onChange={(e) => setFormData(prev => ({ ...prev, nombre: e.target.value }))}
                                 placeholder="John Doe" 
-                                className={`w-full bg-primary-background/80 border rounded-xl px-4 py-3 text-xs text-white outline-none transition-all ${
+                                className={`w-full bg-primary-background/80 border rounded-xl px-4 py-3 text-xs text-white outline-none transition-all [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_1000px_#060407_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#fff] ${
                                     errors.nombre ? "border-crimson" : "border-slate-800 focus:border-gold"
                                 }`} 
                             />
@@ -113,7 +115,7 @@ export default function Contact(){
                                 value={formData.email}
                                 onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
                                 placeholder="Jhon@gmail.com" 
-                                className={`w-full bg-primary-background/80 border rounded-xl px-4 py-3 text-xs text-white outline-none transition-all ${
+                                className={`w-full bg-primary-background/80 border rounded-xl px-4 py-3 text-xs text-white outline-none transition-all [&:-webkit-autofill]:[-webkit-box-shadow:0_0_0_1000px_#060407_inset] [&:-webkit-autofill]:[-webkit-text-fill-color:#fff] ${
                                     errors.email ? "border-crimson" : "border-slate-800 focus:border-gold"
                                 }`} 
                             />
@@ -121,18 +123,21 @@ export default function Contact(){
                         </div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-xs font-bold text-slate-300 uppercase mb-2 font-heading">{tContact("Form.language-label")}</label>
+                    <div>
+                        <label className="block text-sm font-bold text-white mb-3 font-heading">3. {tContact("Form.language-label")}</label>
+                        <div className="relative">
                             <select 
-                                id="formLang" 
+                                id="calcSupport" 
                                 value={formData.idioma}
                                 onChange={(e) => setFormData(prev => ({ ...prev, idioma: e.target.value }))}
-                                className="w-full bg-copper/30 border border-slate-800 rounded-xl px-4 py-3 text-xs text-slate-200 focus:border-gold outline-none cursor-pointer hover:border-gold/50 transition-all"
+                                className="w-full bg-copper/30 border border-slate-800 text-slate-200 text-xs rounded-xl px-4 py-3 pr-10 focus:border-gold outline-none cursor-pointer hover:border-gold/50 transition-all appearance-none"
                             >
                                 <option value="Español" className="bg-[#060407] text-slate-200">Español</option>
                                 <option value="English" className="bg-[#060407] text-slate-200">English</option>
                             </select>
+                            <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gold text-xs">
+                                ▼
+                            </div>
                         </div>
                     </div>
 
@@ -155,7 +160,7 @@ export default function Contact(){
                         siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
                         onSuccess={(token) => setToken(token)}
                     />
-                    {errors.mensaje && <span className="text-crimson text-[11px] mt-1.5 block font-medium">{errors.robot}</span>}
+                    {errors.robot && <span className="text-crimson text-[11px] mt-1.5 block font-medium">{errors.robot}</span>}
 
                     {statusMessage && (
                         <div className={`p-4 rounded-xl text-xs font-medium text-center border ${
