@@ -56,7 +56,7 @@ export default function Home() {
         Contacto directo
       </div>
       <a
-        href="https://wa.me/TU_NUMERO_DE_TELEFONO?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20los%20servicios%20de%20NexoPixel%20X."
+        href="https://wa.me/584167428059?text=Hola,%20me%20gustaría%20obtener%20más%20información%20sobre%20los%20servicios%20de%20NexoPixel%20X."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Contacto por WhatsApp"
