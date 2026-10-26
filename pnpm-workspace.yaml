@@ -1,0 +1,15 @@
+allowBuilds:
+  '@parcel/watcher': true
+  '@swc/core': true
+  sharp: set this to true or false
+  unrs-resolver: true
+overrides:
+  brace-expansion@<1.1.21: ^1.1.21
+  brace-expansion@>=4.0.0 <5.0.12: ^5.0.12
+  js-yaml@>=4.0.0 <4.3.2: ^4.3.2
+  nanoid@<3.3.18: ^3.3.18
+  next@>=16.0.0 <=16.4.0: ^16.4.1
+  postcss@<=8.5.22: ^8.5.23
+  sharp@<0.35.5: ^0.35.5
+  source-map-js@>=1.0.0 <1.2.2: ^1.2.2
+  zod@<4.6.6: ^4.6.6

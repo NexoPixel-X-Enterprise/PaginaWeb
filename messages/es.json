@@ -1,95 +1,160 @@
 {
-  "Navbar": {
-    "home": "Inicio",
-    "about": "Nosotros",
-    "work": "Trabajos",
-    "services": "Servicios",
-    "contact": "Contacto"
+  "Header": {
+    "span": "Soluciones digitales",
+    "navbar": {
+      "services": "Servicios",
+      "why-npx": "¿Por qué NPX?",
+      "simulator": "Cotizador",
+      "tech": "Tecnologías",
+      "about-us": "Nosotros",
+      "works": "Portafolio"
+    },
+    "lang": "ES",
+    "lang-label": "Cambiar idioma a Inglés",
+    "quote-btn": "Cotizar Proyecto"
   },
-
-  "Home": {
-    "title-1": "Software",
-    "title-2": "Development",
-    "description": "Desarrollamos soluciones web, móviles y de escritorio diseñadas para escalar tu marca, optimizar tus procesos y ofrecer la mejor experiencia a tus usuarios.",
-    "contact-button": "Contáctanos"
+  "Hero": {
+    "span": "Desarrollo Web & Desktop de Alta Calidad",
+    "title1": "Desarrollamos ",
+    "title2": "sitios web y aplicaciones a tu medida.",
+    "subtitle": "Transformamos PYMES y empresas globales construyendo aplicaciones web, e-commerce y software desktop de rendimiento masivo impulsados por ",
+    "tech-frontend": "Next.js ",
+    "and": "y ",
+    "tech-backend": "NestJS",
+    "quote-btn": "Calcular Presupuesto",
+    "services-btn": "Explorar Servicios",
+    "warranty1": "Personalizado",
+    "warranty2": "Arquitectura Cero Latencia",
+    "warranty3": "Soporte Continuo",
+    "warranty4": "Bilingüe (ES / EN)",
+    "comment": "Mantenimiento Activo"
   },
-
-  "About": {
-    "about-title": "Acerca de Nosotros",
-    "about-description": "Somos un equipo de desarrolladores enfocados en crear soluciones digitales a medida. Transformamos ideas complejas en software rápido, intuitivo y escalable, combinando arquitectura de código limpia con un diseño centrado en el usuario. Nos apasiona la tecnología y nos aseguramos de que cada proyecto no solo cumpla, sino que supere tus expectativas de negocio.",
-    "warranties-title": "Te Garantizamos",
-    "reliability-description": "Código estructurado y seguro desde la primera línea. Desarrollamos sistemas estables y protegidos contra vulnerabilidades para que tu negocio funcione sin interrupciones.",
-    "time-description": "Planificación clara y cronogramas reales. Cumplimos cada hito y fecha de entrega acordada sin sorpresas ni retrasos innecesarios.",
-    "pen-description": "No te dejamos solo tras la entrega. Te acompañamos durante el despliegue y ofrecemos soporte técnico posterior para asegurar que todo opere al 100%.",
-    "performance-description": "Velocidad de carga ultrarrápida y rendimiento fluido. Optimizamos cada componente para ofrecer la mejor experiencia de usuario en cualquier dispositivo."
+  "Advantages": {
+    "span": "Atracción Digital Masiva",
+    "title": "¿Por qué Elegir NexoPixel X?",
+    "subtitle": "Fusionamos rigor académico de la ciencia de la computación con un desarrollo moderno y personalizado.",
+    "card1-title": "Diseño 100% Personalizado",
+    "card1-desc": "No usamos plantillas genéricas. Cada línea de código está diseñada exactamente a la medida de tu modelo de negocio.",
+    "card2-title": "Mantenimiento y Soporte",
+    "card2-desc": "Brindamos compañía constante tras el despliegue: actualizaciones de seguridad, backups y nuevas funciones.",
+    "card3-title": "Trato Directo sin Intermediarios",
+    "card3-desc": "Hablas y coordinas directamente con los desarrolladores que construyen tu software, garantizando una comunicación ágil, transparente y sin malentendidos.",
+    "card4-title": "Rendimiento Extremo",
+    "card4-desc": "Páginas y sistemas ultra veloces optimizados para máxima velocidad de carga y posicionamiento SEO en Google."
   },
-
-  "Works": {
-    "works-title": "Trabajos recientes",
-    "image-subtitle-1": "Plataforma SaaS & Conversión de Medios",
-    "image-description-1": "Solución web fullstack diseñada para la transformación rápida e intuitiva de archivos multimedia en múltiples formatos (PNG, JPG, WebP, MP4, MP3...). La plataforma optimiza la carga y procesamiento de medios en la nube, ofreciendo una experiencia fluida con soporte para temas claro/oscuro (next-themes) e internacionalización (i18n).",
-    "image-subtitle-2": "UI/UX Design & Catálogo Digital",
-    "image-description-2": "Diseño de interfaz y experiencia de usuario (UI/UX) para el catálogo digital de una panadería artesanal. El proyecto se enfoca en resaltar la calidad visual de los productos mediante una navegación intuitiva, maquetación adaptativa (responsive) y una paleta cromática pensada para impulsar la conversión de clientes desde canales digitales hacia compras directas.",
-    "image-subtitle-3": "Landing Page & Catálogo de Trabajos",
-    "image-description-3": "Sitio web moderno y responsivo desarrollado para un negocio especializado en accesorios y equipamiento todoterreno para vehículos (parachoques, racks, jaulas y estribos). La plataforma cuenta con una galería visual optimizada para exhibir los proyectos realizados y secciones interactivas de contacto y ubicación para facilitar la conversión de clientes.",
-    "image-subtitle-4": "",
-    "image-description-4": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
-    "image-subtitle-5": "",
-    "image-description-5": "Lorem ipsum dolor sit amet consectetur. Ipsum curabitur volutpat nulla neque sem sit mauris. Gravida volutpat cursus nec non donec quam nisl aliquam ac. Molestie pretium eget erat tempor dolor nec habitant arcu sit. Lacus sodales quis varius id nulla morbi sed elit varius.",
-    "visit-button": "Visitar"
-  },
-
   "Services": {
-    "services-title": "Servicios",
-    "mobile-card-title": "Aplicaciones Móviles",
-    "mobile-card-description": "Lleva tu negocio al bolsillo de tus clientes. Diseñamos e implementamos aplicaciones nativas y multiplataforma ágiles, intuitivas y optimizadas para iOS y Android.",
-    "mobile-card-char-1": "Experiencia de usuario (UX/UI) fluida y moderna.",
-    "mobile-card-char-2": "Integración con APIs, pagos y notificaciones push.",
-    "mobile-card-char-3": "Alto rendimiento y funcionamiento offline u online.",
-    "desktop-card-title": "Aplicaciones de Escritorio",
-    "desktop-card-description": "Herramientas robustas y de alto rendimiento adaptadas a la operativa de tu empresa. Potencia la gestión interna, el control de datos y la productividad de tu equipo.",
-    "desktop-card-char-1": "Sistemas a la medida para control operativo y gestión.",
-    "desktop-card-char-2": "Máxima seguridad y procesamiento de datos local/nube.",
-    "desktop-card-char-3": "Mantenimiento, soporte técnico y actualizaciones continuas.",
-    "web-card-title": "Aplicaciones Web",
-    "web-card-description": "Plataformas y sitios web rápidos, escalables y adaptables a cualquier dispositivo. Convertimos visitantes en clientes con arquitecturas modernas y diseño de alto impacto.",
-    "web-card-char-1": "Diseño responsive y optimizado para motores de búsqueda (SEO).",
-    "web-card-char-2": "Panel de administración intuitivo y personalizable.",
-    "web-card-char-3": "Código limpio, seguro y tiempos de carga ultra rápidos.",
-    "card-button": "Consultar"
+    "span": "Nuestros Servicios",
+    "title": "Soluciones de Software a Medida",
+    "subtitle": "Desarrollo integral enfocado en rentabilidad, escala y la mejor experiencia de usuario.",
+    "card1": {
+      "title": "Páginas Web & Landing Pages",
+      "description": "Sitios institucionales impactantes, optimizados para buscadores (SEO) y diseñados para convertir visitantes en clientes activos.",
+      "check1": "Next.js 14 Speed",
+      "check2": "Diseño Móvil Fluido"
+    },
+    "card2": {
+      "title": "Aplicaciones Web a Medida",
+      "description": "Plataformas SaaS, paneles de administración, sistemas de gestión interna e interfaces dinámicas con NestJS y React.",
+      "check1": "NestJS REST",
+      "check2": "Bases de Datos Escalables"
+    },
+    "card3": {
+      "title": "E-Commerce de Alta Conversión",
+      "description": "Tiendas virtuales modernas con gestión de inventario, carritos de compra y pasarelas de pago seguras integradas.",
+      "check1": "Transacciones Integradas",
+      "check2": "Catálogo Personalizable"
+    },
+    "card4": {
+      "title": "Aplicaciones Desktop",
+      "description": "Programas de escritorio para Windows y macOS para automatizar tareas, puntos de venta (POS) y operaciones locales.",
+      "check1": "Multiplataforma",
+      "check2": "Integración Local"
+    },
+    "card5": {
+      "title": "Mantenimiento y Evolución Post-Despliegue",
+      "description": "Monitoreamos tu aplicación después del lanzamiento. Mantenimiento preventivo, corrección de errores, respaldos diarios e incorporación de nuevas características a medida que tu empresa crece.",
+      "check1": "Monitoreo Continuo",
+      "check2": "Copias de Seguridad",
+      "check3": "Parches de Seguridad",
+      "check4": "Soporte Prioritario"
+    }
   },
-
+  "Calculator": {
+    "span": "Simulador Interactivo",
+    "title": "Calculadora de Presupuesto Estimado",
+    "subtitle": "Configura las necesidades de tu proyecto y recibe una estimación al instante.",
+    "Step1": {
+      "step": "Tipo de Proyecto",
+      "tipo1": "Página Web",
+      "tipo2": "Aplicación Web",
+      "tipo3": "E-Commerce",
+      "tipo4": "App de Escritorio"
+    },
+    "Step2": {
+      "step": "Funcionalidades Adicionales",
+      "func1": "Sistema de Autenticación / Login",
+      "func2": "Pasarela de Pagos (Stripe/PayPal)",
+      "func3": "Panel Administrador Personalizado",
+      "func4": "Integración con APIs Externas",
+      "func5": "Integración con IA"
+    },
+    "Step3": {
+      "step": "Mantenimiento Post-Despliegue",
+      "plan1": "Sin plan de mantenimiento recurrente",
+      "plan2": "Mantenimiento Básico + Monitoreo ($50/mes)",
+      "plan3": "Mantenimiento avanazado + Actualizaciones ($120/mes)",
+      "selected1": "sin plan",
+      "selected2": "plan básico",
+      "selected3": "plan avanzado"
+    },
+    "Price": {
+      "title": "Presupuesto estimado",
+      "span": "Tarifas adaptadas para emprendimientos y PYMES.",
+      "type": "Proyecto",
+      "features": "Extras",
+      "amount": "seleccionados",
+      "plan": "Soporte"
+    },
+    "calc-btn": "Solicitar este presupuesto"
+  },
+  "TechStack": {
+    "span": "Stack de Desarrollo",
+    "title": "Nuestro Tech Stack",
+    "subtitle": "Construimos sobre las herramientas más potentes y modernas de la industria.",
+    "ts-desc": "Código Seguro",
+    "node-desc": "Runtime Asíncrono",
+    "mysql-desc": "Base de Datos",
+    "docker-desc": "Despliegue Cloud"
+  },
+  "AboutUs": {
+    "span": "Sobre NexoPixel X",
+    "title": "Estudiantes de Computación con Visión Global y Compromiso Real",
+    "description": "Somos un equipo emprendedor de 4 estudiantes universitarios de Ciencias de la Computación. Combinamos rigor técnico moderno para ofrecer software de nivel empresarial a costos accesibles para PYMES que buscan crecer en la era digital.",
+    "description2": "Brindamos acompañamiento constante tras el lanzamiento, mantenimiento adaptativo y desarrollo continuo para asegurarnos de que tu aplicación se ajuste 100% a las necesidades de tu empresa.",
+    "span2": "Fundamento Académico Robusto",
+    "span3": "Atención Bilingüe (Español/Inglés)",
+    "Team": {
+      "title": "Equipo NexoPixel X",
+      "span": "4 ingenieros de software y desarrolladores",
+      "span2": "Proyectos Activos"
+    }
+  },
   "Contact": {
-    "contact-title": "Contáctanos",
-    "form-title": "Envíanos un mensaje",
-    "name-label": "Nombre Completo",
-    "name-placeholder": "Tu nombre",
-    "email-label": "Email",
-    "email-placeholder": "Tu email",
-    "subject-label": "Asunto",
-    "subject-placeholder": "El asunto de tu mensaje",
-    "message-label": "Mensaje",
-    "message-placeholder": "Tu mensaje",
-    "submit-button": "Enviar Mensaje",
-    "submit-button-loading": "Enviando...",
-    "contact-info-title": "Información de Contacto",
-    "direct-contact-title": "Contacto Directo",
-    "whatsapp-label": "Háblanos por Whatsapp",
-    "whatsapp-button": "Contactar por Whatsapp",
-    "successfully-send-warning": "¡Gracias {nombre}! Tu mensaje ha sido enviado exitosamente.",
-    "error-send-warning": "Error al enviar el mensaje: {error}",
-    "unexpected-error-warning": "Ocurrió un error inesperado al intentar enviar el mensaje.",
-    "token-error-warning": "Por favor, completa la verificación de Turnstile.",
-    "warning-button": "Aceptar",
-    "phone-label" : "Teléfono"
+    "span": "Contáctanos",
+    "title": "Iniciemos tu Proyecto Hoy",
+    "subtitle": "Escríbenos tu idea o requerimiento y responderemos en menos de 24 horas.",
+    "Form": {
+      "name-label": "Nombre Completo",
+      "mail-label": "Correo Electrónico",
+      "language-label": "Idioma Preferido",
+      "details-label": "Detalles del Proyecto",
+      "details-placeholder": "Describe lo que quieres para tu proyecto...",
+      "form-btn": "Enviar Mensaje y Solicitar Asesoría"
+    }
   },
-
   "Footer": {
-    "description": "Desarrollo de software a medida, diseño moderno y soporte continuo para hacer crecer tu proyecto.",
-    "contact-info-title": "Información de Contacto",
-    "follow-us-label": "Síguenos",
-    "rights-reserved-label" : "2026 NexoPixel X Todos los derechos reservados.",
-    "visit-button": "Visitar"
+    "span": "Soluciones digitales",
+    "span2": "© NexoPixel X. Todos los derechos reservados."
   }
 }
 
