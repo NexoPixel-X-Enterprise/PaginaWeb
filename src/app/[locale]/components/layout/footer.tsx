@@ -16,14 +16,14 @@ export default function Footer(){
                   <div className="flex items-center gap-3">
                       <div className="w-8 h-8 rounded-full border border-gold flex items-center justify-center text-[9px] font-black text-white font-heading">NPX</div>
                       <span className="text-sm font-bold text-white font-heading">NexoPixel X</span>
-                      <span className="text-xs text-slate-500">| {tFooter("span")}</span>
+                      <span className="text-xs text-slate-300">| {tFooter("span")}</span>
                   </div>
 
-                  <div className="text-xs text-slate-500">
+                  <div className="text-xs text-slate-300">
                       <span id="year"></span> {tFooter("span2")}
                   </div>
 
-                  <div className="flex items-center gap-4 text-slate-400 text-sm">
+                  <div className="flex items-center gap-4 text-slate-300 text-sm">
                       <a
                         href="https://github.com/nexopixelx-rgb"
                         target="_blank" 

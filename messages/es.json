@@ -162,6 +162,27 @@
       "server-error": "Error de conexión. Inténtalo de nuevo más tarde."
     }
   },
+  "Portfolio": {
+    "span": "Portafolio",
+    "title": "Nuestro Portafolio",
+    "subtitle": "Explora las soluciones web y aplicaciones que hemos diseñado e implementado. Haz clic en cualquiera para interactuar con la versión en tiempo real.",
+    "live-btn": "Ver en vivo",
+    "proy-title": "Proyecto",
+    "proy-desc": "Descripción",
+    "tech-stack": "Tecnologías integradas",
+    "proyect-descriptions": {
+      "proy-1": "Landing page comercial desarrollada para un negocio de accesorios para vehículos todoterreno (4x4), con una galería interactiva de productos, sección de ubicación y detalles clave del negocio.",
+      "proy-2": "Desarrollo de una plataforma SaaS con sistema de autenticación (login/registro) orientada a simplificar al máximo la creación y despliegue automatizado de landing pages y sitios de comercio electrónico. Los usuarios pueden configurar su proyecto rellenando un formulario guiado y completar el despliegue con un solo clic, eliminando toda la fricción técnica y reduciendo el proceso a solo unos segundos."
+    }
+  },
+  "NotFound": {
+    "title": "Página No Encontrada",
+    "desc": "El enlace que intentaste visitar no existe o ha sido movido a otra ubicación en la plataforma.",
+    "btn": "Volver al Inicio"
+  },
+  "Loading": {
+    "span": "Cargando"
+  },
   "Footer": {
     "span": "Soluciones digitales",
     "span2": "© NexoPixel X. Todos los derechos reservados."

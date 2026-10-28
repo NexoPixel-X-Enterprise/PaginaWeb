@@ -162,6 +162,27 @@
       "server-error": "Connection error. Please try again later."
     }
   },
+  "Portfolio": {
+    "span": "Portfolio",
+    "title": "Our Portfolio",
+    "subtitle": "Explore the web solutions and applications we have designed and implemented. Click on any of them to interact with the live version in real time.",
+    "live-btn": "Live preview",
+    "proy-title": "Project",
+    "proy-desc": "Description",
+    "tech-stack": "Tech Stack",
+    "proyect-descriptions": {
+      "proy-1": "Commercial landing page developed for an off-road vehicle (4x4) accessories business, featuring an interactive product gallery, location section, and key business details.",
+      "proy-2": "Development of a SaaS platform featuring a user authentication system (login/signup), built to maximize simplicity in creating and automatically deploying landing pages and e-commerce stores. Users can configure their project using a guided form and trigger the deployment with a single click, completely removing technical friction and streamlining the process into just a few seconds."
+    }
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "desc": "The link you tried to visit does not exist or has been moved to another location on the platform.",
+    "btn": "Return to Home"
+  },
+    "Loading": {
+    "span": "Loading"
+  },
   "Footer": {
     "span": "Digital Solutions",
     "span2": "© NexoPixel X. All rights reserved."

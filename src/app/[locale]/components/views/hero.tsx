@@ -7,7 +7,7 @@ export default function Hero(){
     const tHero = useTranslations("Hero");
 
     return(
-        <section className="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
+        <section id="hero" className="relative pt-36 pb-20 md:pt-48 md:pb-32 overflow-hidden">
             <div 
                 className="absolute top-0 left-0 w-full min-h-screen pointer-events-none"
                 style={{
@@ -20,45 +20,45 @@ export default function Hero(){
   
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber/10 border border-gold/40 text-gold text-xs font-semibold tracking-wide animate-pulse">
                         <span className="w-2 h-2 rounded-full bg-gold animate-ping"></span>
-                        <span data-i18n="hero-badge">{tHero("span")}</span>
+                        <span>{tHero("span")}</span>
                     </div>
 
                     <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight font-heading">
-                        <span data-i18n="hero-title-1">{tHero("title1")}</span>
-                        <span className="bg-[linear-gradient(135deg,#ffffff_0%,#ffaa44_40%,#ff5500_80%,#ff2200_100%)] bg-clip-text text-transparent drop-shadow-md" data-i18n="hero-title-2">{tHero("title2")}</span>
+                        <span>{tHero("title1")}</span>
+                        <span className="bg-[linear-gradient(135deg,#ffffff_0%,#ffaa44_40%,#ff5500_80%,#ff2200_100%)] bg-clip-text text-transparent drop-shadow-md">{tHero("title2")}</span>
                     </h1>
 
-                    <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal" data-i18n="hero-subtitle">
+                    <p className="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed font-normal">
                         {tHero("subtitle")}<strong>{tHero("tech-frontend")}</strong>{tHero("and")}<strong>{tHero("tech-backend")}</strong>.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
                         <a href="#cotizador" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-amber via-gold to-crimson font-bold text-black shadow-lg shadow-amber/30 hover:shadow-gold/50 hover:scale-105 transition-all text-center flex items-center justify-center gap-2 font-heading">
                             <FontAwesomeIcon icon={faCalculator} />
-                            <span data-i18n="hero-btn-primary">{tHero("quote-btn")}</span>
+                            <span>{tHero("quote-btn")}</span>
                         </a>
                         <a href="#servicios" className="w-full sm:w-auto px-8 py-4 rounded-xl bg-copper/40 border border-amber/40 hover:border-gold text-slate-200 font-semibold hover:bg-copper/70 transition-all text-center flex items-center justify-center gap-2 font-heading">
                             <FontAwesomeIcon icon={faCompass} className="text-gold" />
-                            <span data-i18n="hero-btn-secondary">{tHero("services-btn")}</span>
+                            <span>{tHero("services-btn")}</span>
                         </a>
                     </div>
 
                     <div className="pt-12 grid grid-cols-2 md:grid-cols-4 gap-6 text-center border-t border-amber/15 max-w-3xl mx-auto">
                         <div>
                             <div className="text-2xl font-black text-white font-heading">100%</div>
-                            <div className="text-xs text-slate-400 font-medium" data-i18n="stat-1">{tHero("warranty1")}</div>
+                            <div className="text-xs text-slate-400 font-medium">{tHero("warranty1")}</div>
                         </div>
                         <div>
                             <div className="text-2xl font-black text-gold font-heading">Next + Nest</div>
-                            <div className="text-xs text-slate-400 font-medium" data-i18n="stat-2">{tHero("warranty2")}</div>
+                            <div className="text-xs text-slate-400 font-medium">{tHero("warranty2")}</div>
                         </div>
                         <div>
                             <div className="text-2xl font-black text-white font-heading">24/7</div>
-                            <div className="text-xs text-slate-400 font-medium" data-i18n="stat-3">{tHero("warranty3")}</div>
+                            <div className="text-xs text-slate-400 font-medium">{tHero("warranty3")}</div>
                         </div>
                         <div>
                             <div className="text-2xl font-black text-gold font-heading">Global</div>
-                            <div className="text-xs text-slate-400 font-medium" data-i18n="stat-4">{tHero("warranty4")}</div>
+                            <div className="text-xs text-slate-400 font-medium">{tHero("warranty4")}</div>
                         </div>
                     </div>
 
