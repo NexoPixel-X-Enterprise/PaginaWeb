@@ -46,18 +46,18 @@ export default function AboutUs(){
                                 <span className="px-3 py-1 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-semibold">{tAbout("Team.span2")}</span>
                             </div>
 
-                            {/* <div className="space-y-4 text-xs">
+                            <div className="space-y-4 text-xs">
                                 <div className="p-3 rounded-xl bg-black/60 border border-slate-800 flex items-center justify-between">
                                     <div className="flex items-center gap-3">
-                                        <div className="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center text-gold font-bold font-heading">FE</div>
+                                        <div className="w-8 h-8 rounded-full bg-amber/20 flex items-center justify-center text-gold font-bold font-heading">EC</div>
                                         <div>
-                                            <div className="font-bold text-white">Frontend Architecture</div>
-                                            <div className="text-slate-400 text-[10px]">Next.js, React, Tailwind CSS</div>
+                                            <div className="font-bold text-white">E-commerce</div>
+                                            <div className="text-slate-400 text-[10px]">Next.js, NestJS, Tailwind CSS, Supabase</div>
                                         </div>
                                     </div>
                                     <i className="fa-solid fa-code text-slate-500"></i>
                                 </div>
-                            </div> */}
+                            </div>
 
                         </div>
                     </div>
