@@ -88,13 +88,13 @@ export default function Contact(){
                 <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
                     <h2 className="text-xs font-bold uppercase tracking-widest text-gold font-heading">{tContact("span")}</h2>
                     <p className="text-3xl sm:text-4xl font-extrabold text-white font-heading">{tContact("title")}</p>
-                    <p className="text-slate-400 text-sm" data-i18n="contact-desc">{tContact("subtitle")}</p>
+                    <p className="text-slate-400 text-sm">{tContact("subtitle")}</p>
                 </div>
 
                 <form onSubmit={handleSubmit} id="contactForm" className="bg-glass-card p-8 sm:p-10 rounded-3xl border border-gold/25 shadow-[0_0_20px_-5px_rgba(255,119,0,0.25),_inset_0_0_15px_-8px_rgba(255,170,68,0.2)] space-y-6">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
-                            <label className="block text-xs font-bold text-slate-300 uppercase mb-2 font-heading">{tContact("Form.name-label")}</label>
+                            <label className="block text-xs font-bold text-slate-200 uppercase mb-2 font-heading">{tContact("Form.name-label")}</label>
                             <input 
                                 type="text" 
                                 id="formName" 
@@ -108,7 +108,7 @@ export default function Contact(){
                             {errors.nombre && <span className="text-crimson text-[11px] mt-1.5 block font-medium">{errors.nombre}</span>}
                         </div>
                         <div>
-                            <label className="block text-xs font-bold text-slate-300 uppercase mb-2 font-heading">{tContact("Form.mail-label")}</label>
+                            <label className="block text-xs font-bold text-slate-200 uppercase mb-2 font-heading">{tContact("Form.mail-label")}</label>
                             <input 
                                 type="email" 
                                 id="formEmail" 
@@ -124,10 +124,10 @@ export default function Contact(){
                     </div>
 
                     <div>
-                        <label className="block text-sm font-bold text-white mb-3 font-heading">3. {tContact("Form.language-label")}</label>
+                        <label htmlFor="formLanguage" className="block text-xs font-bold text-slate-200 uppercase mb-2 font-heading">3. {tContact("Form.language-label")}</label>
                         <div className="relative">
                             <select 
-                                id="calcSupport" 
+                                id="formLanguage" 
                                 value={formData.idioma}
                                 onChange={(e) => setFormData(prev => ({ ...prev, idioma: e.target.value }))}
                                 className="w-full bg-copper/30 border border-slate-800 text-slate-200 text-xs rounded-xl px-4 py-3 pr-10 focus:border-gold outline-none cursor-pointer hover:border-gold/50 transition-all appearance-none"
@@ -142,7 +142,7 @@ export default function Contact(){
                     </div>
 
                     <div>
-                        <label className="block text-xs font-bold text-slate-300 uppercase mb-2 font-heading" data-i18n="form-message">{tContact("Form.details-label")}</label>
+                        <label className="block text-xs font-bold text-slate-200 uppercase mb-2 font-heading">{tContact("Form.details-label")}</label>
                         <textarea 
                             id="formMessage" 
                             rows={4} 
@@ -177,7 +177,7 @@ export default function Contact(){
                         disabled={loading}
                         className="w-full py-4 rounded-xl bg-gradient-to-r from-amber via-gold to-crimson text-black font-bold font-heading text-xs uppercase tracking-wider hover:shadow-lg hover:shadow-gold/40 transition-all cursor-pointer disabled:opacity-50"
                     >
-                        <span data-i18n="form-btn">{loading ? "Enviando..." : tContact("Form.form-btn")}</span>
+                        <span>{loading ? "Enviando..." : tContact("Form.form-btn")}</span>
                     </button>
                 </form>
             </div>

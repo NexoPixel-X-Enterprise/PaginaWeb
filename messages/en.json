@@ -1,6 +1,8 @@
 {
   "Header": {
     "span": "Digital Solutions",
+    "open-label": "Open navigation menu",
+    "close-label": "Close navigation menu",
     "navbar": {
       "services": "Services",
       "why-npx": "Why NPX?",
