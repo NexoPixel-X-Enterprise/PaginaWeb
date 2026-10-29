@@ -26,19 +26,18 @@ export default function Header(){
 
   // Control Routing
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, targetId: string) => {
-    const isHome = pathname === "/" || pathname === "";
+    e.preventDefault();
+    setIsOpen(false);
+
+    const isHome = pathname === "/" || pathname === "" || pathname === `/${currentLocale}`;
 
     if (isHome) {
-      e.preventDefault();
       const element = document.getElementById(targetId);
       if (element) {
         element.scrollIntoView({ behavior: "smooth" });
-        setIsOpen(false);
       }
     } else {
-      e.preventDefault();
-      setIsOpen(false);
-      window.location.href = `/${currentLocale}/#${targetId}`;
+      router.push(`/#${targetId}`);
     }
   };
 

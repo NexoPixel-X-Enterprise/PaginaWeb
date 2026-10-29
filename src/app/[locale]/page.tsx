@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,6 +24,19 @@ export default function Home() {
     const y = e.clientY - rect.top;
     setMousePosition({ x, y });
   };
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const targetId = hash.replace("#", "");
+      setTimeout(() => {
+        const element = document.getElementById(targetId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    }
+  }, []);
 
   return (
     <main
