@@ -93,6 +93,11 @@ export default function Header(){
             </div>
 
             <button
+              aria-label={
+                isOpen
+                 ? tNav("close-label") 
+                 : tNav("open-label")
+              }
               onClick={() => setIsOpen(!isOpen)}
               className="[@media(min-width:940px)]:hidden text-slate-300 active:text-gold text-2xl focus:outline-none cursor-pointer"
             >

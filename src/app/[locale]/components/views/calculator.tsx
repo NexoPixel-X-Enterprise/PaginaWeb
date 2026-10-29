@@ -215,7 +215,7 @@ export default function Calculator(){
                             </div>
 
                             <div>
-                                <label className="block text-sm font-bold text-white mb-3 font-heading">3. {tCalculator("Step3.step")}</label>
+                                <label htmlFor="calcSupport" className="block text-sm font-bold text-white mb-3 font-heading">3. {tCalculator("Step3.step")}</label>
                                 <div className="relative">
                                     <select 
                                         id="calcSupport" 
