@@ -104,7 +104,7 @@
       "step": "Mantenimiento Post-Despliegue",
       "plan1": "Sin plan de mantenimiento recurrente",
       "plan2": "Mantenimiento Básico + Monitoreo ($50/mes)",
-      "plan3": "Mantenimiento avanazado + Actualizaciones ($120/mes)",
+      "plan3": "Mantenimiento avanzado + Actualizaciones ($120/mes)",
       "selected1": "sin plan",
       "selected2": "plan básico",
       "selected3": "plan avanzado"
